@@ -8,6 +8,7 @@ original:
   author: Greg
   url: https://x.com/Greg_Nazario/status/1751025731839373612
 ```
+
 >[!NOTE] 问题
 >`key` 是什么意思？ `store` 是什么意思？”
 >
@@ -28,7 +29,9 @@ original:
 
 ![https://pbs.twimg.com/media/GEzgthRaMAAYzqT?format=jpg&name=medium](https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/GEzgthRaMAAYzqT.jpeg)
 
-但但这个 `key` 意味着什么呢？它意味着能够从全局状态中借用，这在 Move 中是一个**关键概念**。您可以将全局状态视为每个地址以及该地图中每个资源的大型映射。 
+但但这个 `key` 意味着什么呢？
+
+它意味着能够从全局状态中`借用`，这在 Move 中是一个**关键概念**。您可以将全局状态视为每个地址以及该地图中每个资源的大型映射。 
 
 在这种情况下，`mailbox_router_address` 和 `MailboxRouter`
 

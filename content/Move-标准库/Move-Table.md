@@ -2,8 +2,9 @@
 title: Table
 draft: true
 ---
-
 # Module 0x1::table
+
+它实现了 Table 类型，该类型支持由单独的全局状态项表示的单个表项。在表结构本身上跟踪项的数量和唯一句柄，而操作则作为本机函数实现。不提供遍历。
 
 ## 结构体
 
@@ -25,7 +26,7 @@ handle: address
 
 ### `Box`
 
-Wrapper for values. Required for making values appear as resources in the implementation.
+值的包装器。使值在实现中显示为资源所需。
 
 ```rust
 struct Box<V> has drop, store, key

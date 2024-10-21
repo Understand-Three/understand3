@@ -49,7 +49,7 @@ link:
 
 [[chapter-18-unit-tests|第十八章 单元测试]]
 
-[[chapter-19-Move-prover|第十九章 Move 证明器]]
+[[chapter-19-move-prover|第十九章 Move 证明器]]
 
 [[chapter-20-move-specification-language|第二十章 Move 语言规范]]
 
@@ -70,4 +70,23 @@ link:
 [[chapter-28-keyless|第二十八章：keyless 实现]]
 
 [[appendix-6-aptos-sdk|附录：aptos sdk]]
+
+[[appendix-1-Cryptozoology-in-Move|附录一：Move 中的密码学]]
+
+[[appendix-2-Move-Safety-Guide|附录二：Move 安全指南]]
+
+[[appendix-3-Introduction-to-Move-Compiler-v2|附录三： Move 编译器 2.0]]
+
+[[appendix-4-run scripts|附录四：运行脚本]]
+
+[[appendix-5-aptos-connect|附录五：aptos connect]]
+
+[[appendix-6-aptos-sdk|附录六：aptos sdk]]
+
+[[appendix-7-modules-aptos|附录七：Aptos 上的模块]]
+
+[[appendix-8-token-standards|附录八：Aptos Token 标准]]
+
+[[appendix-9-use-move-compiler-v2|附录九：Move 编译器 v2]]
+
 

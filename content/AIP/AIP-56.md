@@ -1,14 +1,4 @@
 ---
-title: AIP-56 资源访问控制
-aliases:
-  - AIP-56 资源访问控制
-draft: 
-tags:
-  - AIP
-description: aptos 优化提案 56 号
-date: 2024-07-04
----
-```yaml
 aip: 56
 title: 资源访问控制
 author: wg@aptoslabs.com
@@ -17,7 +7,7 @@ Status: Draft
 last-call-end-date (*可选): <mm/dd/yyyy TBD>
 type: Standard
 created: <10/11/2023>
-```
+---
 
 [TOC]
 
@@ -25,7 +15,9 @@ created: <10/11/2023>
 
 ## 一、概述
 
-在 Move 中，函数可以访问任意资源，只要它们可以访问允许操作资源的公共 API。关于这一点存在多个问题，如[动机](#二、动机)部分所讨论的。本AIP提议对 Move 语言进行扩展，以实现对资源进行细粒度的访问控制。这通过一种向下兼容的方式泛化了 Move 中熟悉的`acquires T`声明来实现。所得到的访问控制规则的评估主要是**动态**的，但旨在未来变得静态。动态优先的方法是自然的，因为“偏执”VM模式的冗余原则使得动态检查是必要的。
+在 Move 中，函数可以访问任意资源，只要它们可以访问允许操作资源的公共 API。关于这一点存在多个问题，如[动机](#二、动机)部分所讨论的。本AIP提议对 Move 语言进行扩展，以实现对资源进行细粒度的访问控制。这通过一种向下兼容的方式泛化了 Move 中熟悉的`acquires T`声明来实现。所得到的访问控制规则的评估主要是_动态_的，但旨在未来变得静态。动态优先的方法是自然的，因为“偏执”VM模式的冗余原则使得动态检查是必要的。
+
+在 Move 中，只要函数可以访问允许操作资源的公共 API，它们就可以访问任意资源。然而，这种做法存在多个问题，如 [动机](#二、动机) 部分所述。本 AIP 提议对 Move 语言进行扩展，实现对资源的细粒度访问控制。这通过一种向下兼容的方式泛化了 Move 中熟悉的 `acquires T` 声明。产生的访问控制规则的评估主要是 *动态* 的，但未来打算变为静态。动态优先的方法是自然的（natural），因为“偏执（paranoid）”VM模式的冗余原则使得动态检查是必要的。
 
 ### 1. 目标
 
@@ -42,6 +34,8 @@ created: <10/11/2023>
 
 最初将不会实现对访问控制的静态分析，但预计在 AMC 推出测试版后准备就绪。
 
+
+
 ## 二、动机
 
 只要 Move 函数具有访问允许此操作的模块 API 的权限，并且拥有签名者，它就可以读取、写入和创建任意资源。然而，这种做法存在多个问题：
@@ -51,9 +45,13 @@ created: <10/11/2023>
 - 很难推断函数和交易的副作用。这既适用于审计人员，也适用于 Move 证明器等形式分析。推断的唯一方式是查看代码。
 - 由于查看代码是推断效果的唯一方式，_调用未知_代码（跨信任边界的动态调度）是不安全的，因此目前在 Move 中被禁止。
 
+
+
 ## 三、影响
 
 在中期，预计在两个方面会产生重大影响：一方面是分片和并行化，另一方面是启用其他新的语言特性，如动态调度。
+
+
 
 ## 四、备选方案
 
@@ -67,7 +65,7 @@ created: <10/11/2023>
 
 Move 中现有的 `acquires T` 符号将被扩展语法替换：
 
-```rust
+```move
 fun f() acquires R { .. }                      // 当前：读取或写入任何地址；仅对模块本地可见
 fun f() reads M1::R writes M2::T { .. }        // 新的访问类型 -- 注意引用其他模块中的类型
 fun f<T> acquires R<T> { .. }                  // 支持类型实例化
@@ -93,7 +91,7 @@ fun f() pure { .. }                            // 纯函数，没有访问
 
 访问规范器的概念语法如下：
 
-```rust
+```
 AccessSpecifier := { AccessSpecifierClause } 
 AccessSpecifierClause := [ ! ] Kind ResourceSpecifier AddressSpecifier
 ResourceSpecifier := * | Address::* | Address::Module::* | Address::Module::Resource [ TypeArgs ]
@@ -103,7 +101,7 @@ Kind := acquires | reads | writes
 
 指定访问规范器语义的基本函数是 _包含_（在此处表示为 `in`）。就语义而言，假定依赖于参数或参数函数的地址标识符已经根据函数的具体参数解析为具体地址。在下面的定义中，`K`代表访问类型（读取，写入，获取），`A`代表模块地址，`M`代表模块名称，`R`代表资源名称，`<T>`代表类型实例化，`X`代表资源地址。此外，小写字母 `a` 表示完全访问，`s1` 和 `t1` 表示访问规范器子句。
 
-```rust
+```
 K A::M::R<T>(X)   in *
 K A::M::R<T>(X)   in A::*           
 K A::M::R<T>(X)   in A::M::*       
@@ -117,7 +115,7 @@ a                 in s1, s2, .., !t1, !t2, ..
 
 基于包含关系，另外两个运算符也很重要：联接（用 `*` 表示）和包含关系（用 `>=` 表示）。从集合的角度来看，联接是交集，包含关系是超集。定义如下：
 
-```rust
+```
 对于所有 s1, s2:     s1 >= s2       <==> (对于所有 a: a 在 a2 中 ==> a 在 a1 中)
 对于所有 s1, s2, s:  s == s1 * s2   <==> (对于所有 a: a 在 s <==> a 在 s1 且 a 在 s2) 
 ```
@@ -126,7 +124,7 @@ a                 in s1, s2, .., !t1, !t2, ..
 
 在运行时，维护一个保存的访问规范器栈（stack）以及一个活动的当前访问规范器（specifier）。当进入具有访问规范器的函数时，当前活动集将保存到栈（stack）中。然后，它的值与当前函数的值进行 _联接_（上面的 `*` 运算符）。如果联接的结果不包含被调用函数的规范器，则执行中止：
 
-```rust
+```
 access_stack.push(active_accces)
 active_access := active_access * function_access
 let call_allowed := active_access.subsumes(function_access)
@@ -185,7 +183,7 @@ if !(active_access >= function_access) {
 
 跨信任边界调用的高阶函数可以使用访问规范器更安全地实现。为此，函数类型可以指定访问规范器。例如：
 
-```rust
+```move
 module myaddr::m {
   public entry fun transfer_with_callback(
      s: signer, ..., 

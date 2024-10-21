@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Move-Aptos Computer",
+    pageTitle: "understand3",
     enableSPA: true,
     enablePopovers: true,
     analytics: {

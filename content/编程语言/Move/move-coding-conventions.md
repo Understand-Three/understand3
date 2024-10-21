@@ -17,7 +17,7 @@ title: 编码约定
 - **脚本文件名**：应为小写蛇形，并应与脚本中“主”函数的名称匹配。
 - **混合文件名**：如果文件包含多个模块和/或脚本，文件名应为小写蛇形，其中名称与内部的任何特定模块/脚本不匹配。
 
-## 进口[](https://aptos.guide/en/build/smart-contracts/book/coding-conventions#imports)
+## 入口[](https://aptos.guide/en/build/smart-contracts/book/coding-conventions#imports)
 
 - 所有模块`use`语句都应位于模块的顶部。
 - 函数应从声明的模块中导入和使用完全限定，而不是在顶层导入。
@@ -66,7 +66,7 @@ module 0x1::importer {
 }
 ```
 
-## 评论[](https://aptos.guide/en/build/smart-contracts/book/coding-conventions#comments)
+## 注释[](https://aptos.guide/en/build/smart-contracts/book/coding-conventions#comments)
 
 - 每个模块、结构和公共函数声明都应该进行注释。
 - 移动有文档注释`///`，常规单行注释`//`，阻止注释`/* */`，和阻止文档注释`/** */`。

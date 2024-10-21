@@ -3,11 +3,11 @@ title: Tailwindcss
 ---
 ### 布局和尺寸
 
-1. **flex**：将元素设置为弹性盒子布局，使其子元素可以灵活排列。
-2. **h-screen**：设置元素的高度为视口高度（100vh），使其填满整个屏幕。
-3. **w-full**：设置元素的宽度为 100%，使其占满父容器的全部宽度。
-4. **justify-center**：在弹性盒子中，水平居中对齐子元素。
-5. **pt-20**：设置上内边距为 5rem（80px），为元素提供顶部空间。
+1. **`flex`**：将元素设置为弹性盒子布局，使其子元素可以灵活排列。
+2. **`h-screen`**：设置元素的高度为视口高度（100vh），使其填满整个屏幕。
+3. **`w-full`**：设置元素的宽度为 100%，使其占满父容器的全部宽度。
+4. **`justify-cente`r**：在弹性盒子中，水平居中对齐子元素。
+5. **`pt-20`**：设置上内边距为 5rem（80px），为元素提供顶部空间。
 
 ### 样式和文本
 
@@ -19,10 +19,10 @@ title: Tailwindcss
 
 ### 状态样式
 
-11. **data-[active]:text-white**：当元素具有 `data-active` 属性时，文本颜色变为白色。
-12. **data-[hover]:text-white**：当元素被鼠标悬停时，文本颜色变为白色。
-13. **data-[focus]:outline-1**：当元素获得焦点时，添加 1 像素的轮廓线，以增强可访问性。
-14. **data-[focus]:outline-white**：当元素获得焦点时，轮廓颜色为白色。
+11. **`data-[active]:text-white`**：当元素具有 `data-active` 属性时，文本颜色变为白色。
+12. **`data-[hover]:text-white`**：当元素被鼠标悬停时，文本颜色变为白色。
+13. **`data-[focus]:outline-1`**：当元素获得焦点时，添加 1 像素的轮廓线，以增强可访问性。
+14. **`data-[focus]:outline-white`**：当元素获得焦点时，轮廓颜色为白色。
 
 ### 布局和位置
 
@@ -59,8 +59,8 @@ title: Tailwindcss
 ### 自定义属性
 
 18. **[--anchor-gap:var(--spacing-5)]**：定义一个 CSS 自定义属性，可能用于控制锚点的间距，具体用途取决于上下文。
-19. **data-[closed]:-translate-y-1**：当元素具有 `data-closed` 属性时，向上移动 0.25rem（4px）。
-20. **data-[closed]:opacity-0**：当元素具有 `data-closed` 属性时，设置透明度为 0。
+19. **`data-[closed]:-translate-y-1`**：当元素具有 `data-closed` 属性时，向上移动 0.25rem（4px）。
+20. **`data-[closed]:opacity-0`**：当元素具有 `data-closed` 属性时，设置透明度为 0。
 
 
 ### 类说明
@@ -72,19 +72,33 @@ title: Tailwindcss
 5. **transition**：启用 CSS 过渡效果，使样式变化更平滑。
 6. **hover:bg-white/5**：当鼠标悬停时，将背景色设置为白色，透明度为 20%（即 0.2），创建轻微的悬停效果。
 
-### 其他内容
-
 - **font-semibold**: 文本设置为半粗体
 - **text-white**: 文本颜色为白色
 
 
-### 1. **[--anchor-gap:var(--spacing-5)]**
-- **自定义属性**：这是一个 CSS 自定义属性（CSS variable），`--anchor-gap` 被设置为 `var(--spacing-5)` 的值。这通常用于定义间距或其他样式属性，以便在多个地方重用。
-- **用途**：通过这种方式，你可以在组件的 CSS 中使用 `--anchor-gap` 作为间距或定位的参考。
+- `[--anchor-gap:var(--spacing-5)]`
+	- **自定义属性**：这是一个 CSS 自定义属性（CSS variable），`--anchor-gap` 被设置为 `var(--spacing-5)` 的值。这通常用于定义间距或其他样式属性，以便在多个地方重用。
+	- **用途**：通过这种方式，你可以在组件的 CSS 中使用 `--anchor-gap` 作为间距或定位的参考。
 
-### 2. **data-[closed]:-translate-y-1**
-- **数据属性选择器**：`data-[closed]` 是一个选择器，匹配任何具有 `data-closed` 属性的元素。
-- **效果**：当元素具有 `data-closed` 属性时，`-translate-y-1` 将使该元素向上移动 0.25rem（4px）。这是使用 CSS 变换（transform）来实现位移效果。
+- `data-[closed]:-translate-y-1`
+	- **数据属性选择器**：`data-[closed]` 是一个选择器，匹配任何具有 `data-closed` 属性的元素。
+	- **效果**：当元素具有 `data-closed` 属性时，`-translate-y-1` 将使该元素向上移动 0.25rem（4px）。这是使用 CSS 变换（transform）来实现位移效果。
 
-### 3. **data-[closed]:opacity-0**
-- **效果**：同样，当元素具有 `data-closed` 属性时，这一条会将元素的透明度设置为 0，使其完全不可见。
+- `data-[closed]:opacity-0`: 当元素具有 `data-closed` 属性时，这一条会将元素的透明度设置为 0，使其完全不可见。
+- `divide-y`：在子元素之间添加垂直分隔线。
+- `absolute`：设置元素为绝对定位。
+- `z-10`：设置 z-index 为 10，使元素在堆叠上下文中处于较高层级。
+- `mt-2`：设置上边距（margin-top）为 0.5rem。
+- `w-48`：设置宽度为 12rem。
+- `p-4`：设置内边距（padding）为 1rem。
+- `bg-white`：背景颜色为白色。
+- `border`：添加边框。
+- `rounded`：设置圆角。
+- `shadow-md`：添加中等的阴影效果。
+- `divide-y divide-white/5`：设置分隔线颜色为白色，透明度为 20%。
+- `rounded-xl`：设置更大圆角。
+- `bg-white/5`：背景颜色为白色，透明度为 20%。
+- `text-sm/6`：文本大小为小号（具体尺寸依框架定义）。
+- `transition ease-in-out`：设置过渡效果，使用“ease-in-out”缓动。
+- `bg-opacity-20`：背景透明度设置为 20%。
+- `backdrop-blur-sm`：背景模糊效果，程度较小。

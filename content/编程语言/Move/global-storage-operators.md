@@ -33,7 +33,7 @@ module 0x42::example {
 }
 ```
 
-Move必须强制执行此限制，以保证没有对全局存储的悬垂引用。[本节](https://aptos.guide/en/build/smart-contracts/book/global-storage-operators#reference-safety-for-global-resources)为感兴趣的读者提供了更多细节。
+Move 必须强制执行此限制，以保证没有对全局存储的悬垂引用。[本节](https://aptos.guide/en/build/smart-contracts/book/global-storage-operators#reference-safety-for-global-resources)为感兴趣的读者提供了更多细节。
 
 ## 具有通用的全球存储运营商[](https://aptos.guide/en/build/smart-contracts/book/global-storage-operators#global-storage-operators-with-generics)
 

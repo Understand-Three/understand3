@@ -44,7 +44,7 @@ a_move_package
 
 Move包清单在`Move.toml`文件中定义，并具有以下语法。可选字段用`*`标记，`+`表示一个或多个元素：
 
-```
+```toml
 [package]
 name = <string>                  # 例如, "MoveStdlib"
 version = "<uint>.<uint>.<uint>" # 例如, "0.1.1"

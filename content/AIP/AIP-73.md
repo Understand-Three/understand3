@@ -1,23 +1,19 @@
 ---
-title: AIP-73 可调度 token 标准
-aliases:
-  - AIP-73 可调度 token 标准
----
-```yaml
 aip: 73
-title: 可调度 token 标准
+title: 可分派代币标准
 author: 
-  name: Runtian Zhou
+  - name: Runtian Zhou
 discussions-to: "https://github.com/aptos-foundation/AIPs/issues/374"
-status: 审查中
+status: 审核中
 last-call-end-date: 04/08/2024
 type: 框架
 created: 2024-03-08
-original: 
-  en: "https://github.com/aptos-foundation/AIPs/blob/main/aips/aip-73.md"
-  zh: "https://github.com/ALCOVE-LAB/Aptos-Docs/blob/main/AIP/aip-73.md"
-note: 已校对
-```
+---
+
+[TOC]
+
+# AIP-73 - 可调度 token 标准
+
 ## 一、摘要
 
 目前，Aptos 框架定义了一个单一的 `fungible_asset.move` 作为我们的可替代资产标准，这使得其他开发者难以自定义他们所需的逻辑。通过这项 AIP，我们希望开发者能够自定义他们自己的取出和存入方式 —— 允许以一种可扩展性更好的方式使用我们的 Aptos 框架。
@@ -62,6 +58,8 @@ note: 已校对
 我们正在使用这个 AIP 作为未来在 Aptos 上 Move 语言中支持调度的前期工作。因此，我们将通过一个原生函数而不是在 Move 编译器和 VM 中进行全面更改来实现一个有限作用域的调度函数（function），这样我们就有更多时间评估 Move 中调度逻辑的安全影响。
 
 作为 `overloaded_fungible_asset.move` 的一个备选方案，我们可以考虑将调度功能直接集成到现有的 `fungible_asset.move` 中。不过，按照当前提出的运行时规则，这样做初始使用起来会非常不便。要使调度功能正常工作，我们需要对运行时的安全规则作出一定的调整，以允许重入 `fungible_asset.move`。这意味着框架的开发者需要格外警惕重入可能带来的问题。
+
+
 
 
 ## 五、规范
@@ -135,9 +133,13 @@ public fun register_withdraw_epilogue(
 
 尚未实现。
 
+
+
 ## 七、风险和缺点
 
 这里最大的风险是调度逻辑可能引入的潜在重新进入问题。有关详细信息，请参阅安全考虑部分。
+
+
 
 ## 八、安全考虑
 

@@ -1,9 +1,4 @@
 ---
-title: AIP-84 提高 Gas 覆盖率
-aliases:
-  - AIP-84 提高 Gas 覆盖率
----
-```yaml
 aip: 84
 title: 提高 Gas 覆盖率
 author: vgao1996
@@ -14,11 +9,10 @@ type: 标准 (Gas)
 created: 2024/03/24
 updated (*optional): 2024/03/24
 requires (*optional): N/A
-original: 
-  en: "https://github.com/aptos-foundation/AIPs/blob/main/aips/aip-84.md"
-  zh: "https://github.com/ALCOVE-LAB/Aptos-Docs/blob/main/AIP/aip-84.md"
-note: 已校对
-```
+---
+
+[toc]
+
 # AIP-84 提高燃 Gas 覆盖率
 
 >[!NOTE]
@@ -39,6 +33,8 @@ note: 已校对
     - 但是，框架模块的相关计算则被排除在外。
 
 通过这些新的费用措施，我们可以实现 100% 的 Gas 覆盖率，以此确保网络计算资源的公平分配，保障了网络的安全性。
+
+
 
 ## 二、规范
 
@@ -64,10 +60,14 @@ note: 已校对
 
 这些限制基于主网上最大的传递闭包进行校准，并为升级留出了一些额外的空间。
 
-### 三、不在讨论范围内的内容
+
+
+## 三、不在讨论范围内的内容
 
 - 解决模块冷热加载之间的差异
 - 完美的 Gas 校准
+
+
 
 ## 四、影响
 
@@ -119,7 +119,7 @@ note: 已校对
 
 
 
-## 时间表
+## 十、时间表
 
 作为v1.10版本的一部分，已于4月15日通过以下治理提案启用
 

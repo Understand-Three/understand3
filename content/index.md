@@ -1,5 +1,5 @@
 ---
-title: 在 web3 之下
+title:  Understand 3
 draft: false
 aliases:
   - 计算机与编程
@@ -173,3 +173,26 @@ banner: "static/space.jpg"
  
 [在线工具](https://tool.lu/)
 
+
+资源
+手绘插画： https://www.thosefree.com/tag/abroad-photos
+网站： https://reeoo.com/page/3
+Open Peeps： https://www.openpeeps.com/
+Open Doodles： https://www.opendoodles.com/
+3Dicons： https://3dicons.co/
+3DBox
+https://sketchfab.com/
+
+https://www.heritagetype.com/pages/free-vintage-illustrations
+
+https://www.artic.edu/collection
+https://freevintageillustrations.com/
+
+https://absurd.design/chapter/intro
+
+Loose Drawing
+
+-----------------------
+https://github.com/zhayujie/chatgpt-on-wechat.git
+
+git clone https://gitee.com/zhayujie/chatgpt-on-wechat.git
