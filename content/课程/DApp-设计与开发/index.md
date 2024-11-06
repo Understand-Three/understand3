@@ -18,7 +18,7 @@ note: 已校对
 - [[Node.js]] / [[React.js]]
 - [[Hardhat]] / [[Remix IDE]] / [[Metamask]]
 - [[ERC20]] / [[ERC-721]] / [[Openzepplin]]
-- [[VSCode]] / [[GitHub]] / [[vercel]] / [[Cloudflare]]
+- [[VSCode]] / [[GitHub]] / [[资料/Vercel]] / [[Cloudflare]]
 - [[../../资料/IPFS]] / [[The Graph]] / [[Readthedocs]]
 
 ---

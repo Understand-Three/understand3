@@ -88,5 +88,3 @@ link:
 [[appendix-8-token-standards|附录八：Aptos Token 标准]]
 
 [[appendix-9-use-move-compiler-v2|附录九：Move 编译器 v2]]
-
-

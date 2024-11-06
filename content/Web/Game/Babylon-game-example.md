@@ -1,7 +1,7 @@
 ---
 title: Babylon 游戏案例
 ---
-# 一个club
+# 一个 club
 
 ```html
 <!DOCTYPE html>

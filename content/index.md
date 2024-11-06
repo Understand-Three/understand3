@@ -1,21 +1,15 @@
 ---
-title:  Understand 3
+title: Understand 3
 draft: false
 aliases:
   - 计算机与编程
 date: 2024-04-24
 description: 编程与计算机，wbe3
-tags:
-  - coding
-cssclasses: 
 sticker: emoji//1f3e0
-banner: "static/space.jpg"
+banner: static/space.jpg
 ---
-本站主要基于 Aptos 的文档，以及 OpenBuild、BuilderDAO、Alcove、各大高校的资源等，如若为引用，会在文中或目录处的 yaml 中标明出处。
-
-目前我正在学习英语（以翻译文档的方式），所以可以保证在头部 yaml 中标记为 “已校验” 的内容为 AI 翻译 + 本人核对，具体请查看[[资料/Translation-principles-and-terminology-norms|翻译原则与术语规范]]
-
-[GitHub 开源地址](https://github.com/caoyang2002/aptos_tutorial_quartz)
+> [!NOTE] 不谁而写
+> 这不是一个专业的密码学、经济学、数学和网络等内容的技术和学术分析，如果希望了解专业内容，请移步其他更专业的技术站或者学术站
 
 [[AIP/AIP|Aptos 优化提案]]
 
@@ -25,10 +19,9 @@ banner: "static/space.jpg"
 
 [[MoveOnAptos实战教程]]
 
-
 一、[[install-Aptos-CLI]] 【完成】
 
-二、[[开发教程]]【未编辑】
+二、[[Develop]]【未编辑】
 
 三、[[区块链基础]]
 
@@ -93,7 +86,8 @@ banner: "static/space.jpg"
 	- [投研课程](https://www.gryphsis.com/)
 
 ==运维方面==
-- [[vercel]]
+- [[资料/Vercel]]
+- netfly
 - [cloudflare](https://www.cloudflare.com)
 
 
@@ -104,7 +98,6 @@ banner: "static/space.jpg"
 > **梁培利（成都信息工程大学）**
 >
 > - [[课程/DApp-设计与开发]]：从零开始实现一个 NFT 的交易市场
->
 > - [[DApp-金融]]：
 >
 > **肖臻（北京大学）**
@@ -126,8 +119,8 @@ banner: "static/space.jpg"
 | ----------------------------- | ------------------------------------------------------ |
 | [[APTOS-Whitepaper]]          | [[精通以太坊]]                                              |
 | [[BITCOIN-Whitepaper]]        | [精通比特币](https://github.com/inoutcode/bitcoin_book_2nd) |
-| [[白皮书/ETHEREUM-Whitepaper]]   | [权益证明]()                                               |
-| [[白皮书/SOLANA-Whitepaper]]     |                                                        |
+| [[ETHEREUM-Whitepaper]]   | [权益证明]()                                               |
+| [[SOLANA-Whitepaper]]     |                                                        |
 |                               |                                                        |
 
 | 导航站                                                  | 社区                                                                                                                                                                                                                                                   | 高校                                               | 机构                                               | 安全团队                               | 书籍论文                                                                                       | 其他平台                                                        | GitHub                                                   | 聚合器                                 |
@@ -163,9 +156,6 @@ banner: "static/space.jpg"
 
 
 ---
-- 当前网站地址： https://www.chyraw.com
-- 粉红猛犸社区： https://www.pinkmammoth.xyz/
-- 博客： https://caoyang2002.top/
 - 邮箱：[reggiesimons2cy@gmail.com](mailto:reggiesimons2cy@gmail.com)
 
 
@@ -192,7 +182,9 @@ https://absurd.design/chapter/intro
 
 Loose Drawing
 
------------------------
-https://github.com/zhayujie/chatgpt-on-wechat.git
+> [!NOTE] 说明
+>
+> 本站主要基于 Aptos 的文档，以及 OpenBuild、BuilderDAO、Alcove、各大高校的资源等，如若为引用，会在文中或目录处的 yaml 中标明出处。
+>
+> 目前我正在学习英语（以翻译文档的方式），所以可以保证在头部 yaml 中标记为 “已校验” 的内容为 AI 翻译 + 本人核对，具体请查看[[资料/Translation-principles-and-terminology-norms|翻译原则与术语规范]]
 
-git clone https://gitee.com/zhayujie/chatgpt-on-wechat.git
