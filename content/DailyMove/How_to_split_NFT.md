@@ -1,5 +1,7 @@
 ---
-title: 分割 NFT
+title: 如何分割 NFT
+tags:
+  - DailyMove
 ---
 ```yaml
 original: 

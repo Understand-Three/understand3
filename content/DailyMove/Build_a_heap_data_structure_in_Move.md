@@ -1,5 +1,7 @@
 ---
 title: 在 Move 中构建一个堆数据结构
+tags:
+  - DailyMove
 ---
 ```yaml
 original: 

@@ -1,5 +1,5 @@
 ---
-title: 结构体中能力的作用
+title: 结构体中的key、copy、drop、store是什么意思
 aliases:
   - 结构体中能力的作用
 ---

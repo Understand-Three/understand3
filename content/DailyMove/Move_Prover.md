@@ -7,6 +7,73 @@ original:
   url: 
 note: 纯机翻、未核对
 ```
+
+# 中文
+
+人们之前问过我关于 Aptos 的 Move Prover 以及它的特殊之处。
+
+我将简要介绍一下带有 Venmo 般托管合约的 Prover 在 #DailyMove 上的使用。
+
+在@Aptos上，Move prover允许您正式验证您的代码，以确保在所有情况下都保持某些属性。
+
+让我们谈谈我们的项目需求：
+
+1. 用户应能够向另一个用户发送资金
+2. 发送方可以在接受之前拒绝支付
+3. 接收方可以接受或拒绝支付
+
+深入了解一些代码，我们希望有一个Escrow对象，用于跟踪硬币和原始发送方。
+
+您可以看到下面有**struct不变式**，这些不变式适用于所有情况下的结构。在这种情况下，我们确保托管不应为空。
+
+![https://pbs.twimg.com/media/GIrGVDSaMAAG1Qg?format=jpg&name=medium](https://pbs.twimg.com/media/GIrGVDSaMAAG1Qg?format=jpg&name=medium)
+
+我们可以添加形式验证规范来确保代码是有效的。
+
+1. 转移的硬币数量正确
+2. 发送方始终被跟踪
+3. 我们有该实际对象的删除引用以便以后删除它
+
+![https://pbs.twimg.com/media/GIrHHS0bsAE_WBU?format=jpg&name=medium](https://pbs.twimg.com/media/GIrHHS0bsAE_WBU?format=jpg&name=medium)
+
+我们可以看到当我们运行prover时，它验证了这些属性。
+
+特别是，其中一个说托管不能为0。让我们改变一下！
+
+![https://pbs.twimg.com/media/GIrHso3asAAC1OH?format=png&name=medium](https://pbs.twimg.com/media/GIrHso3asAAC1OH?format=png&name=medium)
+
+我移除了一个检查，即托管金额必须大于0，只是为了看看prover会如何捕捉到它。
+
+![https://pbs.twimg.com/media/GIrILRLakAEymzb?format=jpg&name=medium](https://pbs.twimg.com/media/GIrILRLakAEymzb?format=jpg&name=medium)
+
+然后prover告诉我哪些不变式没有被保持，并附有一个证明的跟踪。
+
+通过更改这一行，我现在使得托管可以为0，而prover也捕捉到了这一点。
+
+![https://pbs.twimg.com/media/GIrIfnRaIAA54L2?format=jpg&name=medium](https://pbs.twimg.com/media/GIrIfnRaIAA54L2?format=jpg&name=medium)
+
+但是，这与代码覆盖有何不同呢？
+
+代码覆盖告诉您代码中的某一行是否被覆盖，但不会告诉您每个可能的输入。
+
+形式验证更加技术化，通常通过证明没有可能破坏属性的输入来确保每个输入都会保持属性。
+
+您可以在这里了解更多有关Prover的信息：[https://aptos.dev/move/prover/move-prover](https://aptos.dev/move/prover/move-prover)
+
+以及示例的源代码在这里：[https://github.com/aptos-labs/daily-move/blob/main/snippets/prover/sources/payment_escrow.move](https://github.com/aptos-labs/daily-move/blob/main/snippets/prover/sources/payment_escrow.move)
+
+[https://pbs.twimg.com/card_img/1776982127621419008/GMSw8irv?format=jpg&name=medium](https://pbs.twimg.com/card_img/1776982127621419008/GMSw8irv?format=jpg&name=medium)
+
+[来自 aptos.dev](https://t.co/9aCln3CZ8t)
+
+感谢阅读我的Move prover帖子。
+
+继续构建，并经常查看最新动态
+
+[#DailyMove](https://twitter.com/hashtag/DailyMove?src=hashtag_click)
+
+
+---
 # English
 
 People asked me about the Move Prover previously for Aptos and what makes it special.
@@ -71,66 +138,3 @@ Keep on building and check in frequently for the latest
 
 [#DailyMove](https://twitter.com/hashtag/DailyMove?src=hashtag_click)
 
-# 中文
-
-人们之前问过我关于Aptos的Move Prover以及它的特殊之处。
-
-我将简要介绍一下带有Venmo般托管合约的Prover在#DailyMove上的使用。
-
-在@Aptos上，Move prover允许您正式验证您的代码，以确保在所有情况下都保持某些属性。
-
-让我们谈谈我们的项目需求：
-
-1. 用户应能够向另一个用户发送资金
-2. 发送方可以在接受之前拒绝支付
-3. 接收方可以接受或拒绝支付
-
-深入了解一些代码，我们希望有一个Escrow对象，用于跟踪硬币和原始发送方。
-
-您可以看到下面有**struct不变式**，这些不变式适用于所有情况下的结构。在这种情况下，我们确保托管不应为空。
-
-![https://pbs.twimg.com/media/GIrGVDSaMAAG1Qg?format=jpg&name=medium](https://pbs.twimg.com/media/GIrGVDSaMAAG1Qg?format=jpg&name=medium)
-
-我们可以添加形式验证规范来确保代码是有效的。
-
-1. 转移的硬币数量正确
-2. 发送方始终被跟踪
-3. 我们有该实际对象的删除引用以便以后删除它
-
-![https://pbs.twimg.com/media/GIrHHS0bsAE_WBU?format=jpg&name=medium](https://pbs.twimg.com/media/GIrHHS0bsAE_WBU?format=jpg&name=medium)
-
-我们可以看到当我们运行prover时，它验证了这些属性。
-
-特别是，其中一个说托管不能为0。让我们改变一下！
-
-![https://pbs.twimg.com/media/GIrHso3asAAC1OH?format=png&name=medium](https://pbs.twimg.com/media/GIrHso3asAAC1OH?format=png&name=medium)
-
-我移除了一个检查，即托管金额必须大于0，只是为了看看prover会如何捕捉到它。
-
-![https://pbs.twimg.com/media/GIrILRLakAEymzb?format=jpg&name=medium](https://pbs.twimg.com/media/GIrILRLakAEymzb?format=jpg&name=medium)
-
-然后prover告诉我哪些不变式没有被保持，并附有一个证明的跟踪。
-
-通过更改这一行，我现在使得托管可以为0，而prover也捕捉到了这一点。
-
-![https://pbs.twimg.com/media/GIrIfnRaIAA54L2?format=jpg&name=medium](https://pbs.twimg.com/media/GIrIfnRaIAA54L2?format=jpg&name=medium)
-
-但是，这与代码覆盖有何不同呢？
-
-代码覆盖告诉您代码中的某一行是否被覆盖，但不会告诉您每个可能的输入。
-
-形式验证更加技术化，通常通过证明没有可能破坏属性的输入来确保每个输入都会保持属性。
-
-您可以在这里了解更多有关Prover的信息：[https://aptos.dev/move/prover/move-prover](https://aptos.dev/move/prover/move-prover)
-
-以及示例的源代码在这里：[https://github.com/aptos-labs/daily-move/blob/main/snippets/prover/sources/payment_escrow.move](https://github.com/aptos-labs/daily-move/blob/main/snippets/prover/sources/payment_escrow.move)
-
-[https://pbs.twimg.com/card_img/1776982127621419008/GMSw8irv?format=jpg&name=medium](https://pbs.twimg.com/card_img/1776982127621419008/GMSw8irv?format=jpg&name=medium)
-
-[来自 aptos.dev](https://t.co/9aCln3CZ8t)
-
-感谢阅读我的Move prover帖子。
-
-继续构建，并经常查看最新动态
-
-[#DailyMove](https://twitter.com/hashtag/DailyMove?src=hashtag_click)

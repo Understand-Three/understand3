@@ -1,19 +1,21 @@
 ---
 title: Move 0x1 中断是什么意思？
+tags:
+  - DailyMove
 ---
 ```yaml
 original: 
   author: Greg
   url: https://x.com/Greg_Nazario/status/1748257251343864219
 created: 2024年1月19日
-note: 纯机翻、未核对
+note: 已核对-simons
 ```
 
 [查看原文](https://x.com/Greg_Nazario/status/1748257251343864219)
 
 >[!NOTE] 问题
 >原帖子的问题来自于 Discord 上的提问：
->“Move中止0x1是什么意思？”
+>“Move 中止 0x1 是什么意思？”
 >[https://pbs.twimg.com/media/GGQJghPbIAEY2bl?format=png&name=900x900](https://pbs.twimg.com/media/GGQJghPbIAEY2bl?format=png&name=900x900)
 
 你是否曾经在钱包中看到过一个不太有帮助的错误消息？让我们深入了解开发者如何修复这个问题：
@@ -22,7 +24,7 @@ note: 纯机翻、未核对
 
 Move 语言中的错误代码用于区分合约中的错误。它让你能够确定是你没有支付足够的费用，还是你提供了无效的输入。
 
-让我们看看下面的这个代码片段。在错误代码上面没有文档注释`///`。这意味着错误没有附加的消息。
+让我们看看下面的这个代码片段。在错误代码 `E_ERROR_WITHOUT_MESSAGE` 上面没有文档注释 `///`。这意味着错误没有附加的消息。
 
 ![https://pbs.twimg.com/media/GEMLDTTb0AE-FjI?format=jpg&name=large](https://pbs.twimg.com/media/GEMLDTTb0AE-FjI?format=jpg&name=large)
 
@@ -42,15 +44,15 @@ Move 语言中的错误代码用于区分合约中的错误。它让你能够确
 
 >[!NOTE] 如何用？
 >
->但是，Greg，我们应该使用什么样的惯例 / 模式呢？
+>但是，Greg，我们应该使用什么样的惯例或者模式来写错误码呢？
 
-按照惯例，错误消息的名称以`E`开头，并且全部是大写字母。它们是常量，并且始终是 `u64` 类型。
+按照惯例，错误消息的名称以`E`开头，并且全部是大写字母。它们是常量 `const`，并且始终是 `u64` 类型。
 
 还可以将错误分类为不同的类型。
 
 ![https://pbs.twimg.com/media/GEMNH_4bEAADJwW?format=jpg&name=medium](https://pbs.twimg.com/media/GEMNH_4bEAADJwW?format=jpg&name=medium)
 
-通过使用`std::error::<type>`的分类，它为错误代码添加了一个前缀。这允许更容易地分割共享但不同类型的错误。
+通过使用 `std::error::<type>` 的分类，它为错误代码添加了一个前缀。这允许更容易地分割共享但不同类型的错误。
 
 如果有一个错误消息，它不会直接显示给用户的消息，所以我在这里跳过它，以展示它看起来像什么。
 

@@ -12,24 +12,24 @@ original:
 
 > 内容基本来自于 Aptos 工程师 Greg 的推特，
 
-[[Move Prover]]
+[[Move_Prover]]
 
-[[可分割 token 和 ERC-404]]
+[[Separable_token_and_ERC-404]]
 
-[[Smart 的 Gas save]]
+[[Smart_Gas_storage]]
 
 [[Move-0x1-abro ]]
 
-[[VRF（可验证的随机函数）的使用]]
+[[How_to_use_VRF]]
 
-[[为什么要使用对象，如何使用]]
+[[Why_and_how_to_use_objects]]
 
 [[delete]]
 
-[[分割 NFT]]
+[[How_to_split_NFT]]
 
-[[出售可组合的 NFT]]
+[[How_to_sell_composable_NFT]]
 
 [[Move-0x1-abro ]]
 
-[[在 Move 中构建一个堆数据结构]]
+[[Build_a_heap_data_structure_in_Move]]
