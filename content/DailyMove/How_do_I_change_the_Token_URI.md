@@ -17,9 +17,9 @@ note: 纯机翻、未核对
 >
 > 你是否一直在想，人们在 Aptos NFTs 上谈论的这种可扩展性是什么？
 
-让我们通过一个简单的例子，由创建者分配 point 给 token 来解释。让我们在 [DailyMove](https://twitter.com/hashtag/DailyMove?src=hashtag_click)中深入了解它
+让我们通过一个简单的例子，由创建者分配 point 给 token 来解释。让我们在 #DailyMove 中深入了解它
 
-通常对于一个应用程序，人们可能认为他们必须从一开始就把所有的数据搞定，我们明白有时作为创建者，你希望能够稍后修改事物。
+通常对于一个应用程序，人们可能认为他们必须从一开始就把所有的数据搞定，我们明白有时作为创建者，你希望能够稍后修改一些东西。
 
 Digital Asset 标准和 Aptos 上的 Object 标准的伟大之处在于，对象可以被扩展。
 

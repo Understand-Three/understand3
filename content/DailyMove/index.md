@@ -18,18 +18,14 @@ original:
 
 [[Smart_Gas_storage]]
 
-[[Move-0x1-abro ]]
-
 [[How_to_use_VRF]]
 
 [[Why_and_how_to_use_objects]]
-
-[[delete]]
 
 [[How_to_split_NFT]]
 
 [[How_to_sell_composable_NFT]]
 
-[[Move-0x1-abro ]]
+[[Move_0x1_abort]]
 
 [[Build_a_heap_data_structure_in_Move]]

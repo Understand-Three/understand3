@@ -16,8 +16,6 @@ note: 纯机翻、未核对
 
 这个问题连同一个真实的链上漏洞
 
-![https://abs-0.twimg.com/emoji/v2/svg/1f92b.svg](https://abs-0.twimg.com/emoji/v2/svg/1f92b.svg)
-
 引发了关于随机性安全和入口函数的想法。这个真实的漏洞正是通过这个改变解决的。
 
 # 中文
@@ -44,21 +42,21 @@ note: 纯机翻、未核对
 
 ![https://pbs.twimg.com/media/GEeAEIBa4AE4s3L?format=png&name=small](https://pbs.twimg.com/media/GEeAEIBa4AE4s3L?format=png&name=small)
 
-然而，它存在一个问题，一个聪明的作弊者实际上可以欺骗系统，如果他们失败了就不支付费用。相反，他们只支付 Gas。
+然而，它存在一个问题，一个聪明的作弊者实际上可以欺骗系统，如果他们失败了就不支付费用。相反，他们只需支付 Gas。
 
-[https://github.com/aptos-labs/daily-move/blob/main/snippets/private-vs-public/cheater/sources/cheater.move#L11-L28](https://github.com/aptos-labs/daily-move/blob/main/snippets/private-vs-public/cheater/sources/cheater.move#L11-L28)
+[cheater.move#L11-L28](https://github.com/aptos-labs/daily-move/blob/main/snippets/private-vs-public/cheater/sources/cheater.move#L11-L28)
 
 ![https://pbs.twimg.com/media/GEeAY_La4AEkQXP?format=jpg&name=medium](https://pbs.twimg.com/media/GEeAY_La4AEkQXP?format=jpg&name=medium)
 
 对抗这种情况的方法是使用私有入口函数。这个入口函数**只能**作为一个事务调用。它不能被包装在其他函数中，并且防止作弊者不支付费用。
 
-[https://github.com/aptos-labs/daily-move/blob/main/snippets/private-vs-public/dice_roll/sources/dice_roll.move#L69-L77](https://github.com/aptos-labs/daily-move/blob/main/snippets/private-vs-public/dice_roll/sources/dice_roll.move#L69-L77)
+[dice_roll.move#L69-L77](https://github.com/aptos-labs/daily-move/blob/main/snippets/private-vs-public/dice_roll/sources/dice_roll.move#L69-L77)
 
 ![https://pbs.twimg.com/media/GEeAhF2a4AIenS4?format=jpg&name=medium](https://pbs.twimg.com/media/GEeAhF2a4AIenS4?format=jpg&name=medium)
 
 此外，公共函数也可以以同样的方式被利用。私有函数则不会。
 
-[https://github.com/aptos-labs/daily-move/blob/main/snippets/private-vs-public/cheater/sources/cheater.move#L30-L35](https://github.com/aptos-labs/daily-move/blob/main/snippets/private-vs-public/cheater/sources/cheater.move#L30-L35)
+[cheater.move#L30-L35](https://github.com/aptos-labs/daily-move/blob/main/snippets/private-vs-public/cheater/sources/cheater.move#L30-L35)
 
 ![https://pbs.twimg.com/media/GEeBcaDacAAP9_H?format=png&name=900x900](https://pbs.twimg.com/media/GEeBcaDacAAP9_H?format=png&name=900x900)
 
@@ -71,6 +69,8 @@ note: 纯机翻、未核对
 [#DailyMove](https://twitter.com/hashtag/DailyMove?src=hashtag_click)
 
 
+
+---
 # Question
 
 "Is there a VRF on-chain and how do I use this?"
