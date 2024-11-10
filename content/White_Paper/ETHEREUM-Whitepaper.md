@@ -1,6 +1,6 @@
 ---
 title: ETHEREUM-白皮书
-draft: 
+draft: true
 aliases:
   - 以太坊白皮书
 date: 2024-06-12

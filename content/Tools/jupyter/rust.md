@@ -1,3 +1,8 @@
+---
+title: Rust
+draft: true
+---
+
 # 安装Miniconda
 有很多方法可以安装并建立交互式编程环境，这里我推荐用Miniconda。
 

@@ -8,5 +8,6 @@ _sort:
   group: false
 _template: ""
 _templateName: ""
+draft: true
 ---
 https://cryptologos.cc/logos/

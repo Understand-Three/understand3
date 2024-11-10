@@ -1,5 +1,6 @@
 ---
 title: 构建一个 dapp 的方法
+draft: true
 ---
 过期
 # 前言

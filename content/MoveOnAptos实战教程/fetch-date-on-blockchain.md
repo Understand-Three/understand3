@@ -4,6 +4,7 @@ aliases:
   - 获取链上数据
 tags:
   - aptos
+draft: true
 ---
 # TypeScript
 

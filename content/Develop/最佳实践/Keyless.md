@@ -3,7 +3,7 @@ title: keyless-案例教程
 aliases:
   - keyless
 date: 2024-06-21
-draft: 
+draft: true
 description: aptos 的 keyless 前端案例教程，aptos Dapp 使用 Google 账户登陆
 tags:
   - aptos

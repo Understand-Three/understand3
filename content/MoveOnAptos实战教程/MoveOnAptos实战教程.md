@@ -1,7 +1,7 @@
 ---
-_filters: []
-_contexts: []
-_links: []
+_filters: 
+_contexts: 
+_links: 
 _sort:
   field: rank
   asc: false
@@ -10,4 +10,5 @@ _template: ""
 _templateName: ""
 sticker: emoji//1f99c
 banner: static/MoveOnAptos.jpg
+draft: true
 ---

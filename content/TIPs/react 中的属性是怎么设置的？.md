@@ -1,3 +1,8 @@
+---
+title: React 中的属性是怎么设置的？
+draft: true
+---
+
 # 添加自定义属性
 ```tsx
 import Developing from '@/src/components/Developing'

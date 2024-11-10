@@ -1,5 +1,6 @@
 ---
 title: 白皮书
+draft: true
 ---
 [[APTOS-Whitepaper]]
 

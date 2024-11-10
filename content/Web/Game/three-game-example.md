@@ -1,5 +1,6 @@
 ---
 title: threejs 游戏案例
+draft: true
 ---
 # club
 

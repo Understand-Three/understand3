@@ -1,6 +1,6 @@
 ---
 title: BITCOIN-白皮书
-draft: 
+draft: true
 aliases:
   - 比特币币皮书
 date: 2024-06-13

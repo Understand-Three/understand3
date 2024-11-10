@@ -1,3 +1,8 @@
+---
+title: 关于BTC 的一些问题
+draft: true
+---
+
 # 关于 BTC 的一些问题
 1. Cikey 你想了解的相关话题?（主要话题是围绕BTC和怎么理解BTC的价值，及EIP 等相关）
 2. xboring 为什么btc的转账用 utxo 而不是和 eth 一样呢，意义在哪里？

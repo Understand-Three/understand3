@@ -1,3 +1,8 @@
+---
+title: Pink-Mammoth
+draft: true
+---
+
 ```ts
 'use client'
 // 定义了钱包按钮的显示

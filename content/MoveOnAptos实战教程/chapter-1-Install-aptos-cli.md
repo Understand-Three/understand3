@@ -2,7 +2,7 @@
 title: 第一章 安装 Aptos CLI
 aliases:
   - install aptos cli
-draft: false
+draft: true
 description: 安装 aptos 命令行工具
 tags:
   - aptos-cli

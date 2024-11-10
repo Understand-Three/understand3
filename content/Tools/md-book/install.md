@@ -1,3 +1,8 @@
+---
+title: 安装
+draft: true
+---
+
 
 https://hellowac.github.io/mdbook-doc-zh/zh-cn/cli/serve.html
 ```bash

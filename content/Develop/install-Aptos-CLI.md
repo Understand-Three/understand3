@@ -1,5 +1,6 @@
 ---
 title: 安装-Aptos-CLI
+draft: true
 ---
 ```yaml
 original: 原创

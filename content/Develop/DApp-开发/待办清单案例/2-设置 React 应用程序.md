@@ -1,5 +1,6 @@
 ---
 title: 2-设置 React 应用程序
+draft: true
 ---
 # 设置 React 应用程序
 

@@ -1,5 +1,6 @@
 ---
 title: 安装 anaconda3
+draft: true
 ---
 
 # 安装

@@ -1,3 +1,9 @@
+---
+title: DAO 是什么
+draft: true
+---
+
+
 本文由 Cikey
 翻译。原文是 [What Is a DAO? A Simplified Guide](https://www.webopedia.com/crypto/learn/dao-decentralized-autonomous-organization-explained/)
 ，作者是 Sal Miah。

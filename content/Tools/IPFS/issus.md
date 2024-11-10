@@ -1,5 +1,6 @@
 ---
 title: 常见问题
+draft: true
 ---
 # 自己的网关可以访问，其他的网关不能访问
 1. 使用 `localhost:5001/ipfs/hash` 可以访问

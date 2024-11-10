@@ -2,6 +2,7 @@
 title: 认知偏差知识手册
 aliases:
   - 认知偏差知识手册
+draft: true
 ---
 # 决策、信念与行为偏差
 

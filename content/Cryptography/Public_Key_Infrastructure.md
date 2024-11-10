@@ -2,6 +2,7 @@
 title: 公钥基础设施体系
 aliases:
   - 公钥基础设施体系
+draft: true
 ---
 # PKI 体系
 

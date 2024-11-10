@@ -1,5 +1,6 @@
 ---
 title: 搭建一个简单的在线 Move 运行环境
+draft: true
 ---
 ```yaml
 original: 原创

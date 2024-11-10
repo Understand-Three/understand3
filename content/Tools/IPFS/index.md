@@ -1,3 +1,8 @@
+---
+title: IPFS
+draft: true
+---
+
 bilibili ---- jupiter 黑客松 workshop2 
 
 > 可以吧 IPFS 理解成对象存储

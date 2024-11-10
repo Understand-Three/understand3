@@ -1,6 +1,6 @@
 ---
 title: Move 语言基础语法
-draft: 
+draft: true
 aliases:
   - Move 基础语法
 ---

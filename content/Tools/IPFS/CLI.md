@@ -1,5 +1,6 @@
 ---
 title: 命令行工具
+draft: true
 ---
 # Kubo 的基本 CLI 操作
 

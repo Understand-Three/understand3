@@ -1,5 +1,6 @@
 ---
 title: mut 的作用是什么
+draft: true
 ---
 先看一段[示例代码](https://aptos.dev/en/build/smart-contracts/book/structs-and-resources#borrowing-structs-and-fields)
 

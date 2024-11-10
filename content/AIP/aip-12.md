@@ -1,20 +1,15 @@
 ---
 aip: 12
-title: 多签账户
+title: 12-多签账户
 author: movekevin
 discussions-to: https://github.com/aptos-foundation/AIPs/issues/50
 Status: Accepted
-last-call-end-date:
+last-call-end-date: 
 type: Standard (Framework)
 created: 2023/01/24
-updated: 2023/01/26 
+updated: 2023/01/26
 ---
-
-[TOC]
-
-# AIP - 12 - 多签账户
-
-## 一、概述
+# 一、概述
 
 这份 AIP 推出了一个全新的多签名账户标准。这个标准主要通过在智能合约（multisig_account）中定义明确的数据结构和功能实现管理，与目前采用多重 Ed25519 授权密钥（multied25519-auth-key）的账户相比，使用起来更为便捷，功能也更加全面。此外，它还强调了整合为 Aptos 中更广义的账户系统一部分的发展方向，为用户提供更多样化的账户类型和账户管理功能。 
 

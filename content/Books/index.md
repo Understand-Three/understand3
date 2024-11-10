@@ -1,5 +1,6 @@
 ---
 title: 书籍整理
+draft: true
 ---
 ```yaml
 original: "https://github.com/fltenwall/web3-awesome?tab=readme-ov-file"

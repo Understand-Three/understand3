@@ -1,24 +1,15 @@
 ---
 aip: 41
-title: 用于公共随机数生成的Move API
+title: 41-用于公共随机数生成的 Move API
 author: Alin Tomescu (alin@aptoslabs.com)
-discussions-to (*optional): https://github.com/aptos-foundation/AIPs/issues/185
+discussions-to: https://github.com/aptos-foundation/AIPs/issues/185
 Status: Accepted
-last-call-end-date (*optional): <mm/dd/yyyy the last date to leave feedbacks and reviews>
+last-call-end-date: <mm/dd/yyyy the last date to leave feedbacks and reviews>
 type: Standard (Framework)
 created: 06/27/2023
-updated (*optional): <07/28/2023>
-requires (*optional): <AIP number(s)>
+updated: <07/28/2023>
+requires: <AIP number(s)>
 ---
-
-[TOC]
-
-
-
-# AIP-41 - 用于公共随机数生成的 Move API
-
-**版本:** 1.3
-
 ## 一、概述
 
 > 包含一个简短的描述，总结了拟议的更改。这应该不超过几句话。
@@ -109,7 +100,7 @@ requires (*optional): <AIP number(s)>
 
 1. 非常**容易误用**外部随机性信标
    1. 例如，合同编写者可能未能承诺应该使用未来某个具体的`drand` 随机数字序列中的数字，而是接受任何序列中的随机数字，这会导致一个致命的偏差攻击。
-   2. 例如，在像 `drand` 这样的外部随机数生成系统中，由于系统产生随机数的时间间隔和区块链本身的时间可能存在微小差异（clock drift），开发者就必须为合约指定一个足够未来的数字序列（ a far-enough-in-the-future round #），从而确保随机性的有效应用。这意味着，在去中心化应用（dapp）可以利用这些随机数之前，将不得不等待一个额外的时间延迟。
+   2. 例如，在像 `drand` 这样的外部随机数生成系统中，由于系统产生随机数的时间间隔和区块链本身的时间可能存在微小差异（clock drift），开发者就必须为合约指定一个足够未来的数字序列（ a far-enough-in-the-future round ），从而确保随机性的有效应用。这意味着，在去中心化应用（dapp）可以利用这些随机数之前，将不得不等待一个额外的时间延迟。
 2. **随机性太昂贵或生成速度太慢**：可以想象一个世界，在这个世界中，许多 dapp 实际上是随机化的应用程序。在这个世界中，随机性需要非常快速且非常便宜地产生，这对于现有的信标来说并不现实。
 3. 外部**随机性必须通过一个 交易（TXN）被传送**到合约中，，这使得用户使用起来很别扭（例如，在上述的 [drand 的 Move 抽奖](https://github.com/aptos-labs/aptos-core/tree/ad3b32a7686549b567deb339296749b10a9e4e0e/aptos-move/move-examples/drand/sources) 示例中，某人，可能是中奖用户，必须通过发送一个含有 `drand` 随机性的交易（TXN）来“关闭”抽奖）。
 

@@ -1,5 +1,6 @@
 ---
 title: TypeScript 教程
+draft: true
 ---
 ```yaml
 original: https://ts.xcatliu.com/

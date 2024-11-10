@@ -1,5 +1,6 @@
 ---
 title: 安装 IPFS
+draft: true
 ---
 # Linux
 [查看原文](https://docs.ipfs.tech/install/command-line/#install-official-binary-distributions)

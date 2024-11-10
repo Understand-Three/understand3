@@ -1,5 +1,6 @@
 ---
 title: Nextjs
+draft: true
 ---
 ```yaml
 original: https://nextjs.org/docs

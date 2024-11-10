@@ -4,6 +4,7 @@ link:
   - https://learnblockchain.cn/article/7921
 aliases:
   - 零知识证明
+draft: true
 ---
 
 

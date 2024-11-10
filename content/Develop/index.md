@@ -1,5 +1,6 @@
 ---
 title: 开发教程
+draft: true
 ---
 [GitHub](https://github.com/caoyang2002/aptos_mvoe-learning)
 

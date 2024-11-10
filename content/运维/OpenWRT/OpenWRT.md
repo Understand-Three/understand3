@@ -1,6 +1,0 @@
----
-title: OpenWRT
-aliases:
-  - OpenWRT
----
-[[

@@ -9,18 +9,13 @@ created: 2023/1/9
 updated: 2023/3/18
 requires: "AIP-10: Move Objects"
 ---
-
-[TOC]
-
-# AIP - 11 - 数字资产：作为对象的 Token 
-
-## 一、概述
+# 一、概述
 
 本AIP提议使用 *Move Objects* 为 Aptos 提供一个新的 Token 标准。在这个模型中，每一个 Token 代表着庞大资产（assets）集合（collection）中的独一无二的某项资产。不论是代表资产集合，还是资产本身的 Move 对象，它们都利用了对象模型的可扩展性。此特性支持构建丰富的应用类别，例如非同质化代币（NFTs）、游戏资产和“无代码”解决方案等，同时确保这些应用在接口上保持兼容。这种设计使得基于 Token 的应用，不仅可以针对 Token 的高级功能进行专门化设计，例如某个具体的游戏出版商可能会有自己的 Token 商店，还可以实现对所有 Token 的泛化处理（ generalize across），如 Token 市场。
 
 
 
-## 二、动机
+# 二、动机
 
 对象提供了一种自然的方式来表示具有以下特点的 Token ：
 
@@ -33,7 +28,7 @@ requires: "AIP-10: Move Objects"
 
 许多相同的属性同样适用于 Collection 。
 
-## 三、基本原理
+# 三、基本原理
 
 现有的 Token 模型存在两个主要问题：过于全面且在 Move 编程环境中过分依赖 `store` 功能。为了解决 Move 之前对象的局限性，Token 标准不得不试图应对 Token 领域可预见的挑战，如果这个问题处理不当，将难以避免产生问题。这个过程中衍生出了许多难以理解的功能，如 `property_versions`，同时也缺少了如冻结（freeze）或灵魂绑定（soul bound）等重要特性，以及一些其他的问题。另外，由于该模型过于依赖于 `store` 功能，Token 数据可能会被放置在链上任何地方，从而可能带来许多用户体验方面的问题。这个基于对象的新模型解决了许多已知的问题，但这样的改进可能需要现有的基础设施过渡到新模型，虽然这一变动对使用数据检索工具（indexers）和开发工具包（SDKs）的用户来说可能几乎无感。
 
@@ -43,19 +38,19 @@ requires: "AIP-10: Move Objects"
 
 
 
-## 四、规范
+# 四、规范
 
-###  1. Token 和 Collection 的对象标识符
+##  1. Token 和 Collection 的对象标识符
 
 因为 Token 建立在对象之上，它们必须遵循对象标识符（Object IDs）的生成方式。对象标识符使用以下方式生成：`sha3_256(address_of(creator) | seed | 0xFE)` 或 `sha3_256(GUID | 0xFD)`。 Token 可以使用 `seed` 字段为每个 Token 生成唯一的地址。当生成种子（seed）时， Token 使用以下方式：`bcs::to_bytes(collection) | b"::" | bcs::to_bytes(name)`，也支持通过GUID生成对象标识符。类似地，Collection在生成种子时使用以下方式：`bcs::to_bytes(collection)`。这确保了所有Collection和 Token 的全局唯一性，除非 Token 或 Collection 已被销毁。请注意，选择`0xFE`是为了提供域分离（domain separation），并确保地址生成是唯一的，以防止对象和账户之间的重复地址生成。
 
 由于现有的 Token 迭代不利用基于 `GUID` 的对象标识符生成，因为存在发现性（discoverability）挑战。具体来说，一旦 Aptos 有足够的节点内（on-node）索引来识别基于`GUID`的对象，我们才可能推出更新的标准。
 
-### 2. 核心逻辑
+## 2. 核心逻辑
 
 Token 标准包括 Token 本身、Token 集合（Collections） 以及版税（Royalties）。
 
-####  2.1 Tokens
+###  2.1 Tokens
 
 在创建 Token 之前，必须首先存在一个 Collection  。
 
@@ -65,7 +60,7 @@ Token 标准包括 Token 本身、Token 集合（Collections） 以及版税（R
 
 它不会改变 Move 对象的基础可扩展性。
 
-####  2.2 Collections
+###  2.2 Collections
 
  Collection 能够监控其供给量。目前， Collection 可以使用`FixedSupply`跟踪器或`UnlimitedSupply`。`FixedSupply`和`UnlimitedSupply`都跟踪所有铸造以及燃烧和铸造事件。此外，`FixedSupply` 还会与 Collection 关联的 Token 的最大发行数量。不使用跟踪器允许并行处理，但需代价是不能指定 Token 最大数量或为每个 Token 分配唯一索引到 Collection 中。
 
@@ -73,7 +68,7 @@ Token 标准包括 Token 本身、Token 集合（Collections） 以及版税（R
 
 它不会改变Move对象的基础可扩展性。
 
-#### 2.3 Royalties 
+### 2.3 Royalties 
 
  Royalties  指定了一种方式来指定在销售中接收部分付款的实体（entity ）。
 
@@ -83,13 +78,13 @@ Token 标准包括 Token 本身、Token 集合（Collections） 以及版税（R
 
 它不会改变Move对象的基础可扩展性。
 
-### 3. 数据结构
+## 3. 数据结构
 
 本标准指定了 Token 、 Collection 和  Royaltie 的数据结构。
 
-###  4. Token 数据结构
+##  4. Token 数据结构
 
-```move
+```rust
 #[resource_group_member(group = aptos_framework::object::ObjectGroup)]
 /// 表示所有 Token 的通用字段。
 struct Token has key {
@@ -124,9 +119,9 @@ struct MutationEvent has drop, store {
 }
 ```
 
-####  4.1 Collection 数据结构
+###  4.1 Collection 数据结构
 
-```move
+```rust
 #[resource_group_member(group = aptos_framework::object::ObjectGroup)]
 /// 表示 Collection 的通用字段。
 struct Collection has key {
@@ -177,7 +172,7 @@ struct UnlimitedSupply has key {
 }
 ```
 
-### 5. 数据限制
+## 5. 数据限制
 
 为了确保可以访问存储在链上的数据，例如在索引或查询API期间，这个标准对能够动态调整长度的字段设置了几个限制：
 
@@ -185,9 +180,9 @@ struct UnlimitedSupply has key {
 - 名称（Name）字段最多可以包含128个字符（characters）。
 - URI字段最多可以包含512个字符（characters）。
 
-#### 5.1 版税数据结构
+### 5.1 版税数据结构
 
-```move
+```rust
 #[resource_group_member(group = aptos_framework::object::ObjectGroup)]
 /// 此 Collection 中 Token 的 Royalty --这是可选的
 struct Royalty has copy, drop, key {
@@ -203,13 +198,13 @@ struct MutatorRef has drop, store {
 }
 ```
 
-### 6. API
+## 6. API
 
 此标准涵盖了进行 Token、集合（collection）和版税（Royalty）操作的所有的有效 API，包括存取（accessing）、修改（mutating）和删除（deleting）。它并未定义入口函数，因为 Token 标准推荐使用更具体的实施方式来处理。
 
-####  6.1 Token API
+###  6.1 Token API
 
-```move
+```rust
 /// 从 Token 名称创建一个新的 Token 对象，并返回构造器引用（ConstructorRef），以便进行后续的特定处理。
 public fun create_named_token(
     creator: &signer,
@@ -268,9 +263,9 @@ public fun set_name(mutator_ref: &MutatorRef, name: String);
 public fun set_uri(mutator_ref: &MutatorRef, uri: String);
 ```
 
-####  6.2  Collection API
+###  6.2  Collection API
 
-```
+```rust
 /// 创建一个固定大小的 Collection ，或支持固定数量 Token 的 Collection 。这对于在链上创建有保证的、有限的供应数字资产非常有用。例如，一个包含1111个恶毒的毒蛇的 Collection 。请注意，创建诸如上限等限制会导致数据结构，阻止Aptos对此类型的 Collection 的铸造进行并行化。
 
 /// 创建一个固定大小的 Collection ，或支持限定数量 Token（Token）的 Collection 。
@@ -318,9 +313,9 @@ public fun set_description(mutator_ref: &MutatorRef, description: String);
 public fun set_uri(mutator_ref: &MutatorRef, uri: String);
 ```
 
-### 7. 版税API
+## 7. 版税API
 
-```
+```rust
 /// 添加 royalty，给定 ConstructorRef。
 public fun init(ref: &ConstructorRef, royalty: Royalty);
 
@@ -342,21 +337,21 @@ public fun numerator(royalty: &Royalty): u64;
 public fun payee_address(royalty: &Royalty): address;
 ```
 
-## 五、参考实现
+# 五、参考实现
 
 https://github.com/aptos-labs/aptos-core/pull/7277 中的第一个提交
 
-## 六、风险和缺陷
+# 六、风险和缺陷
 
 在 Token 领域（space）快速迭代可能会给寻求稳定的开发者带来负面影响。识别迭代的合适频率和动机是极其关键的。同时，我们也不希望因为稳定性与创新之间的张力而限制了潜在的创造可能性。
 
-## 七、未来潜力
+# 七、未来潜力
 
 把 Token 看作对象既可以增强表达力，又可以实现核心 Token 代码与其应用之间的解耦（decouples）。在当前这个阶段之后，核心 Token 代码可能只会有很少的更改，新应用会在核心 Token 模块之上开发自己的代码。
 
 
 
-## 八、建议的实施时间表
+# 八、建议的实施时间表
 
 - 探索版本自2023年1月起存在于`move-examples`中。
 - 到2023年3月中旬，对框架的一般性认识已经达成。

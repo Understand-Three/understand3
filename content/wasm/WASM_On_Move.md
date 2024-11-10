@@ -1,5 +1,6 @@
 ---
 title: wasm 版本的 mvoe
+draft: true
 ---
 https://www.wasm.com.cn/getting-started/developers-guide/
 

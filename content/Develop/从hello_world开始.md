@@ -1,5 +1,6 @@
 ---
 title: 从 hello_world 开始
+draft: true
 ---
 > 建议使用 Linux & Mac
 

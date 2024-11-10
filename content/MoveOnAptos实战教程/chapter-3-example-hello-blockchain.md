@@ -1,5 +1,6 @@
 ---
 title: 第三章 案例：hello blockchain
+draft: true
 ---
 
 源码： https://github.com/aptos-labs/aptos-core/tree/main/aptos-move/move-examples/hello_blockchain

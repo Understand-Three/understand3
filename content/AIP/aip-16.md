@@ -1,21 +1,16 @@
 ---
 aip: 16
-title: 新密码学原生功能用于哈希和 MultiEd25519 PK 验证
+title: 16-新密码学原生功能用于哈希和 MultiEd25519 PK 验证
 author: Alin Tomescu <alin@aptoslabs.com>
 discussions-to (*optional): https://github.com/aptos-foundation/AIPs/issues/57
 Status: Accepted
-last-call-end-date (*optional):
-type: Standard Framework # <Standard (Core, Networking, Interface, Application, Framework) | Informational | Process>
+last-call-end-date: 
+type: Standard Framework
 created: 02/02/2022
-updated (*optional):
+updated (*optional): 
 requires (*optional):
 ---
-
-[TOC]
-
-# AIP - 16 - 新密码学原生功能用于哈希和 MultiEd25519 PK 验证
-
-## 一、概述
+# 一、概述
 
 这是一系列包含三个变更的计划：
 
@@ -29,13 +24,13 @@ requires (*optional):
 
 
 
-## 二、动机
+# 二、动机
 
-### 1. 哈希
+## 1. 哈希
 
 当构建跨链桥时，支持新的哈希函数将非常有用。 例如，生成比特币地址时需要进行 RIPEMD-160 哈希计算（参见 [这里](https://en.bitcoin.it/wiki/Protocol_documentation#Addresses)）。 如果我们不采纳这项提案，就会像 Composable.Finance 这样的公司所说的一样，搭建到其他链的跨链桥时（以及其他密码学应用），将在执行成本（即 Gas 费用）上变得更加高昂。
 
-### 2. MultiEd25519 PK 验证 V2
+## 2. MultiEd25519 PK 验证 V2
 
 PK 验证的错误本会危及我们的 `0x1::multi_ed25519::ValidatedPublicKey` 结构类型的类型安全，该数据结构旨在保证一个公钥是格式正确的。正确格式的要求之一是，子公钥的数量必须超过 0。 
 
@@ -52,7 +47,7 @@ PK 验证的 bug 将威胁我们的 `0x1::multi_ed25519::ValidatedPublicKey` 结
 如果我们不接受这个提案，用户可能会错误地使用 `0x1::multi_ed25519::ValidatedPublicKey` 结构进而引发其他安全问题。
 比如说，签名的不可否认（non-repudiation）性特性可能会如下被破坏： 设想有一个智能合约，它（1）手动反序列化这样一个结构体，（2）解析所有子公钥，并（重新）实施自己的签名验证逻辑来进行检查：
 
-```
+```rust
 // 从恶意字节构造一个格式不正确的 n-out-of-n 公钥
 let ill_formed_validated_pk = multi_ed25519::new_validated_public_key_from_bytes(evil_bytes);
 
@@ -76,7 +71,7 @@ return true;
 
 
 
-## 三、基本原理
+# 三、基本原理
 
 **Q：** 解释为什么您提交了这个提案，而不是其他解决方案。为什么这是最好的可能结果？
 
@@ -86,13 +81,13 @@ MultiEd25519 的变更是一个 bug 修复。另一种选择是不修复它，�
 
 
 
-## 四、规范
+# 四、规范
 
 哈希函数的 API 和 MultiEd25519 的 API 在下面的参考实现中已经得到了充分的文档支持。
 
 
 
-## 五、参考实现
+# 五、参考实现
 
 - [Blake2b-256 哈希函数](https://github.com/aptos-labs/aptos-core/pull/5436)
 - [SHA2-512、SHA3-512 和 RIPEMD-160 哈希函数](https://github.com/aptos-labs/aptos-core/pull/4181)
@@ -100,7 +95,7 @@ MultiEd25519 的变更是一个 bug 修复。另一种选择是不修复它，�
 
 
 
-## 六、风险和缺陷
+# 六、风险和缺陷
 
 - 在 Move 中缺少 `#[deprecated]` 或 `#[deprecated_by=new_func_name]` 注解，使得很难轻松地警告用户不要使用已过时的 MultiEd25519 PK 验证 API。例如：
   - 弃用的API： `0x1::multi_ed25519::public_key_validate` 
@@ -110,18 +105,18 @@ MultiEd25519 的变更是一个 bug 修复。另一种选择是不修复它，�
 
 
 
-## 七、未来潜力
+# 七、未来潜力
 
 这些哈希函数可以用于链上的许多密码应用程序（例如，验证 zk-STARK 证明）。
 
 
 
-## 八、建议的实施时间表
+# 八、建议的实施时间表
 
 一切都已经实现了。
 
 
 
-## 九、建议的部署时间表
+# 九、建议的部署时间表
 
 这可能会在三月初进入测试网。

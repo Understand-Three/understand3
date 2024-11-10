@@ -1,5 +1,6 @@
 ---
 title: jupyter 的安装
+draft: true
 ---
 # 安装
 

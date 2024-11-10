@@ -2,6 +2,7 @@
 title: Hello world
 aliases:
   - Hello world
+draft: true
 ---
 正式学习 WASM 汇编的第一步，是先对 WASM 有一个初步的认识。因此，正如在学习别的编程语言的过程中，一个Hello world是必不可少的，本章也将展示WASM的一些基本程序。
 

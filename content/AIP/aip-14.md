@@ -1,21 +1,16 @@
 ---
 aip: 14
-title: 更新锁仓合约
+title: 14-更新锁仓合约
 author: movekevin
 Status: Accepted
-last-call-end-date:
+last-call-end-date: 
 type: Standard (Framework)
 created: 2023/02/10
 updated: 2023/02/10
 ---
+# 一、动机
 
-[TOC]
-
-# AIP - 14 - 更新锁仓合约
-
-## 一、动机
-
-本提案旨在更新当前的锁定合约中的奖励分配逻辑：https://github.com/aptos-labs/aptos-core/blob/496a2ce5481360e555b670842ef63e6fcfbc7926/aptos-move/framework/aptos-framework/sources/vesting.move#L420
+本提案旨在更新当前的锁定合约中的奖励分配逻辑： [vesting.move#L420](https://github.com/aptos-labs/aptos-core/blob/496a2ce5481360e555b670842ef63e6fcfbc7926/aptos-move/framework/aptos-framework/sources/vesting.move#L420)
 
 当前的奖励计算使用的是基础的  `staking_contract` 的记录本金，每次调用 `staking_contract::request_commission` 时都会更新。
 
