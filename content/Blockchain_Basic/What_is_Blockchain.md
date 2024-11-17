@@ -8,7 +8,7 @@ aliases:
 >
 > 区块链是是一种技术，广为熟知的比特币和以太坊只是使用了这种技术。区块链和金融是强相关的，因为它的创建者（中本聪）一开始就是为了金融的目的（比特币）而创造了它。
 > 
-> 在大多数时候，谈到区块链的时候，总是会伴随着 Web3，很容易让人以为 Web3 就是区块链，就像认为比特币就是区块链一样，实际上 Web3 是一种基于 Web2 的对下一代互联网的畅想。
+> 在大多谈到区块链的时候，总是会伴随着 Web3，很容易让人以为 Web3 就是区块链，就像认为比特币就是区块链一样，实际上 Web3 是一种基于 Web2 的对下一代互联网的畅想。
 > 
 > 本文主要解释区块链的技术和原理。关于前文提及的两个概念，可以查看：
 > - [[What_is_Bitcoin|比特币是什么？]]
@@ -23,7 +23,7 @@ aliases:
 
 # 麻将就是区块链！
 
-张三、李四、王二、麻子四个伙计，是多年的“雀友”，人称麻将四人组。麻将四人组的玩法和大家并没有差别，但是他们不用现金结账，每次通过记账来记录每个人的输赢，**而且他们的记账规则很奇特**：
+张三、李四、二狗、麻子四个伙计，是多年的“雀友”，人称麻将四人组。麻将四人组的玩法和大家并没有差别，但是他们不用现金结账，每次通过记账来记录每个人的输赢，**而且他们的记账规则很奇特**：
 
 > 1、自摸才算胡牌（正确写法是“和牌”，为了便于理解都写成“胡牌”）。  
 > 2、输赢暂时都不用给钱，而是先记个账，四人每人一本账本。  
@@ -301,12 +301,27 @@ aliases:
 	- [区块链行业专题研究](https://q76mcea5o0.feishu.cn/wiki/wikcngM7oexjFvaLYdkKfnI13Gh)：国盛证券研报
 
 
+# 阅读材料：
 
+什么是区块链？[coinbase.com](https://www.coinbase.com/zh-cn/learn/crypto-basics/what-is-a-blockchain)
+
+什么是区块链：[blackduck.com](https://www.blackduck.com/glossary/what-is-blockchain.html)
+
+什么是区块链？[coingeek.com](https://coingeek.com/blockchain101/what-is-blockchain/)
+
+什么是区块链：[coresite.com](https://www.coresite.com/blog/what-is-blockchain)
+
+区块链：它是什么，它是如何工作的，为什么它很重要：[builtin.com](https://builtin.com/blockchain)
+
+
+> [!NOTE] 答案
 > 还记得本文的第一张图片吗？
 > 
 > 那是 2009 年时，《纽约时报》中 Surety 哈希值的一个例子。
 >
-> 其中写道：通知&寻物启事
+> 其中写道：
+> 
+> 通知&寻物启事
 >
 > 通用登记条目：
 >

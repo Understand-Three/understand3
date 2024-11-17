@@ -1,14 +1,15 @@
 ---
-title: Defi 是什么？
+title: DeFi 是什么？
 aliases:
-  - Defi 是什么？
+  - DeFi 是什么？
   - 去中心化金融是什么？
 draft: false
 ---
+> [!NOTE]
 > DeFi 不是单个产品或公司，而是一系列替代银行、保险、债券和货币市场等机构的产品和服务。DeFi Dapp 允许用户将它们提供的服务组合起来，从而开启更多的可能性。由于其可组合性，DeFi 通常被称为货币乐高 (money LEGO)。
 
 
-# Defi 的产生
+# DeFi 的产生
 
 据世界银行估计，截至2017年有17亿人在金融机构没有账户，其中一半以上来自发展中国家。他们主要来自贫困家庭，没有银行账户的一些主要原因是贫困、地域和信任问题。
 
@@ -102,39 +103,40 @@ DeFi的诞生和创新的速度无疑将为支付工作引入新的思维方式�
 How to DiFi： [入门版-中文](https://nigdaemon.gitbook.io/how-to-defi-beginnerv2/) [进阶版-中文](https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b) 
 
 # 推荐阅读
+    
+全球金融体系的7大缺陷(Jeff Desjardins)：[visualcapitalist.com-英文](https://www.visualcapitalist.com/7-major-flaws-global-financial-system)
+    
+去中心化的金融：全球金融体系的一个新兴替代方案(Frank Cardona) ：[visualcapitalist.com-英文](https://www.visualcapitalist.com/decentralized-finance/)
+    
+去中心化金融如何使投资更容易(Jeff Desjardins)： [visualcapitalist.com-英文](https://www.visualcapitalist.com/how-decentralized-finance-could-make-investing-more-accessible/)
+    
+什么是去中心化金融 （DeFi）？简短指南： [101blockchains.com-英文](https://101blockchains.com/decentralized-finance-defi)
 
-什么是 DeFi？了解去中心化金融的深入指南：[英文](https://medium.com/@KKGCConcept/what-is-defi-an-in-depth-guide-to-understanding-decentralized-finance-b1551120ab47)
+DeFi 解释(Yos Riady)：[yos.io-英文](https://yos.io/2019/12/08/decentralized-finance-explained/)
+    
+DeFi 的初学者指南(Linda J. Xie)：[nakamoto.com-英文](https://nakamoto.com/beginners-guide-to-defi/)
+    
+DeFi 的初学者指南（Coinbase）：[coinbase.com-英文](https://blog.coinbase.com/a-beginners-guide-to-decentralized-finance-defi-574c68ff43c4)
+    
+DeFi 完全新手指南(Binance)： [binance.com-英文](https://www.binance.vision/blockchain/the-complete-beginners-guide-to-decentralized-finance-defi)
+    
+2019 年是 DeFi 之年（Mason Nystrom）：[consensys.net-英文](https://consensys.net/blog/news/2019-was-the-year-of-defi-and-why-2020-will-be-too/)
+    
+DeFi 有多去中心化？借贷协议的分类框架 (Kyle Kistner) ：[hackernoon.com-英文](https://hackernoon.com/how-decentralized-is-defi-a-framework-for-classifying-lending-protocols-90981f2c007f)
+    
+DeFi 的去中心化程度如何？(Aaron Hay) ：[medium.com-英文](https://medium.com/coinmonks/how-decentralized-is-decentralized-finance-89aea3070e8f)
+DeFi 是什么和不是什么（第一部分）（Justine Humenansky）：[medium.com-英文](https://medium.com/coinmonks/defi-what-it-is-and-isnt-part-1-f7d7e7afee16)
 
-什么是 DeFi？探索金融格局的潜力和影响：[英文](https://medium.com/@nes-tech/what-is-defi-exploring-the-potential-and-impact-on-the-financial-landscape-ab7492af5e0f)
-    
-全球金融体系的7大缺陷(Jeff Desjardins)：[英文](https://www.visualcapitalist.com/7-major-flaws-global-financial-system)
-    
-去中心化的金融：全球金融体系的一个新兴替代方案(Frank Cardona) ：[英文](https://www.visualcapitalist.com/decentralized-finance/)
-    
-去中心化金融如何使投资更容易(Jeff Desjardins)： [英文](https://www.visualcapitalist.com/how-decentralized-finance-could-make-investing-more-accessible/)
-    
-什么是去中心化金融 （DeFi）？简短指南： [英文](https://101blockchains.com/decentralized-finance-defi)
+什么是 DeFi？了解去中心化金融的深入指南：[medium.com-英文](https://medium.com/@KKGCConcept/what-is-defi-an-in-depth-guide-to-understanding-decentralized-finance-b1551120ab47)
 
-DeFi 解释(Yos Riady)：[英文](https://yos.io/2019/12/08/decentralized-finance-explained/)
+什么是 DeFi？探索金融格局的潜力和影响：[medium.com-英文](https://medium.com/@nes-tech/what-is-defi-exploring-the-potential-and-impact-on-the-financial-landscape-ab7492af5e0f)
     
-DeFi 的初学者指南(Linda J. Xie)：[英文](https://nakamoto.com/beginners-guide-to-defi/)
-    
-DeFi 的初学者指南（Coinbase）：[英文](https://blog.coinbase.com/a-beginners-guide-to-decentralized-finance-defi-574c68ff43c4)
-    
-DeFi 完全新手指南(Binance)： [英文](https://www.binance.vision/blockchain/the-complete-beginners-guide-to-decentralized-finance-defi)
-    
-2019 年是 DeFi 之年（Mason Nystrom）：[英文](https://consensys.net/blog/news/2019-was-the-year-of-defi-and-why-2020-will-be-too/)
-    
-DeFi 是什么和不是什么（第一部分）（Justine Humenansky）：[英文](https://medium.com/coinmonks/defi-what-it-is-and-isnt-part-1-f7d7e7afee16)
-    
-DeFi 有多去中心化？借贷协议的分类框架 (Kyle Kistner) ：[英文](https://hackernoon.com/how-decentralized-is-defi-a-framework-for-classifying-lending-protocols-90981f2c007f)
-    
-DeFi 的去中心化程度如何？(Aaron Hay) ：[英文](https://medium.com/coinmonks/how-decentralized-is-decentralized-finance-89aea3070e8f)
-    
-DeFi 地图：[英文 PDF](https://outlierventures.io/wp-content/uploads/2019/06/Mapping-Decentralised-Finance-DeFi-report.pdf)
+DeFi 地图：[putlierventures.io-英文 PDF](https://outlierventures.io/wp-content/uploads/2019/06/Mapping-Decentralised-Finance-DeFi-report.pdf)
 
-市场报告：2019年DeFi年度回顾 [英文](https://defirate.com/market-report-2019/)
+市场报告：2019 年 DeFi 年度回顾 [defirate.com-英文](https://defirate.com/market-report-2019/)
     
-2020 DeFi 的无边界状态：[英文](https://research.binance.com/analysis/2020-borderless-state-of-defi)
+2020 DeFi 的无边界状态：[binance.com-英文](https://research.binance.com/analysis/2020-borderless-state-of-defi)
     
-汤姆-施密特谈 DeFi（软件工程日报）[英文](https://softwareengineeringdaily.com/2020/02/25/decentralized-finance-with-tom-schmidt/)
+汤姆-施密特谈 DeFi（软件工程日报）[softwareengineeringdaily.com-英文](https://softwareengineeringdaily.com/2020/02/25/decentralized-finance-with-tom-schmidt/)
+
+前 5 名去中心化金融 （DeFi） 用例：[beincrypto.com](https://beincrypto.com/learn/decentralized-finance-and-use-cases/)

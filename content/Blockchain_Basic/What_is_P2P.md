@@ -19,3 +19,32 @@ draft: true
 # 技术原理
 
 
+
+
+# 参考
+
+什么是 P2P（点对点流程）？[geeksforgeeks.org](https://www.geeksforgeeks.org/what-is-p2p-peer-to-peer-process/)
+
+什么是 P2P？[techradar.com](https://www.techradar.com/vpn/what-is-p2p)
+
+P2P 网络：[britannica.com](https://www.britannica.com/science/Internet-of-Things)
+
+什么是点对点？含义、特点、优点和缺点：[spocework.com](https://www.spiceworks.com/tech/networking/articles/what-is-peer-to-peer/)
+
+点对点 （P2P） 网络： [techopedia.com](https://www.techopedia.com/definition/25777/peer-to-peer-network-p2p-network)
+
+点对点网络 （P2P）：它是什么、特征、示例：[vestinda.com](https://www.vestinda.com/blog/blockchain/peer-to-peer-network-p2p-what-it-is-characteristics-examples)
+
+点对点网络 （P2P）：[networkencyclopedia.com](https://networkencyclopedia.com/peer-to-peer-network-p2p/)
+
+什么是点对点网络？综合指南：[mudrex.com](https://mudrex.com/learn/peer-to-peer-network-explained/)
+
+什么是点对点 （P2P） 网络？[coinmarketcap.com](https://coinmarketcap.com/academy/article/what-is-peer-to-peer-p2p)
+
+点对点网络如何运作？[flolio.com](https://flolio.com/resources/peer-to-peer-network)
+
+什么是 P2P，它是如何工作的？[magicbell.com](https://www.magicbell.com/blog/what-is-p2p-and-how-does-it-work)
+
+点对点借贷：它是什么，它是如何运作的，以及如何投资它：[time.com](https://time.com/personal-finance/article/what-is-peer-to-peer-lending/)
+
+什么是 P2P 借贷？优势和挑战：[quantmatter.com](https://quantmatter.com/what-is-p2p-lending-the-advantages-and-challenges/)

@@ -13,7 +13,7 @@ draft: false
 
 提及比特币，绝对绕不过去的一个人物是中本聪（Satoshi Nakamoto）—— 比特币的创始人。在数字货币的历史长河中，中本聪（Satoshi Nakamoto）和比特币（Bitcoin）无疑是两颗最耀眼的星辰。他们的出现不仅颠覆了传统的货币体系，也为全球金融科技的发展指明了新的方向。
 
-中本聪，一个谜一样的存在，其真实身份至今未被揭晓。在P2P Foundation网站上，他留下的出生日期1975年4月5日，被认为与美国货币史上的重要事件有关，比如但这些信息的真实性存疑。2008年，中本聪发表了比特币白皮书，提出了一种全新的电子现金系统构想，这一构想无需中心化机构的介入，完全依赖于点对点网络。2009年1月3日，比特币网络的第一个区块——创世区块诞生，标志着比特币的正式问世。中本聪通过挖矿获得了首批50个比特币，这一事件被永久记录在区块链上。 在比特币网络稳定运行后，中本聪逐渐淡出了公众视野，2011年左右，他彻底隐退于比特币社区，从此江湖上只有关于他的传说。
+中本聪，一个谜一样的存在，其真实身份至今未被揭晓。在 P2P Foundation 网站上，他留下的出生日期1975年4月5日，被认为与美国货币史上的重要事件有关，比如但这些信息的真实性存疑。2008年，中本聪发表了比特币白皮书，提出了一种全新的电子现金系统构想，这一构想无需中心化机构的介入，完全依赖于点对点网络。2009年1月3日，比特币网络的第一个区块——创世区块诞生，标志着比特币的正式问世。中本聪通过挖矿获得了首批50个比特币，这一事件被永久记录在区块链上。 在比特币网络稳定运行后，中本聪逐渐淡出了公众视野，2011年左右，他彻底隐退于比特币社区，从此江湖上只有关于他的传说。
 
 # 比特币（Bitcoin）
 
@@ -143,26 +143,26 @@ UTXO 未花费的交易输出（Unspent Transaction Output ），是比特币和
 
 # 资料
 
-为开发人员准备的比特币服务和工具列表： [https://github.com/igorbarinov/awesome-bitcoin](https://github.com/igorbarinov/awesome-bitcoin)
+为开发人员准备的比特币服务和工具列表： [github.com/igorbarinov-英文](https://github.com/igorbarinov/awesome-bitcoin)
 
-全面的中文 BTC 学习资料：BTCStudy [https://www.btcstudy.org/](https://www.btcstudy.org/)
+全面的中文 BTC 学习资料：BTCStudy [btcstudy.org-英文](https://www.btcstudy.org/)
 
-比特币生态资源导航：[https://123btc.org/](https://123btc.org/)
+比特币生态资源导航：[123btc.org-英文](https://123btc.org/)
 
-比特币脚本模拟工具： [https://wschae.github.io/build/editor.html](https://wschae.github.io/build/editor.html)
+比特币脚本模拟工具： [wschae.github.io-英文](https://wschae.github.io/build/editor.html)
 
 一个介绍bitcoin 各种背后细节的网站： [learnmeabitcoin (英文)](https://learnmeabitcoin.com/)
 
 比特币开发者指南：[英文](https://developer.bitcoin.org/devguide/index.html)  [中文](https://0dayzh.gitbooks.io/bitcoin_developer_guide/content/)
     
-通过命令行学比特币：[Github](https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line)
+通过命令行学比特币：[Github/BlockchainCommons-英文](https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line)
     
-比特币基础编程： [英文](https://davidederosa.com/basic-blockchain-programming/)
+比特币基础编程： [davidederosa.com-英文](https://davidederosa.com/basic-blockchain-programming/)
     
-比特币交易与脚本开发：[登链社区付费内容](https://learnblockchain.cn/column/65/intro)
-    
-比特币开发思想：[英文](https://bitcoindevphilosophy.com/)
+比特币开发思想：[bitcoindevphilosophy.com-英文](https://bitcoindevphilosophy.com/)
 
-比特币 wiki ：[英文](https://en.bitcoin.it/wiki/Main_Page)
+比特币 wiki ：[bitcoin.it-英文](https://en.bitcoin.it/wiki/Main_Page)
+
+比特币交易与脚本开发：[learnblockchain.cn-登链社区付费内容](https://learnblockchain.cn/column/65/intro)
 
 ![[bitcoin_map.png]]

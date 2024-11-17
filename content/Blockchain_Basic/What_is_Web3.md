@@ -26,11 +26,28 @@ Web2 时代也是中心化时代。网络效应和规模经济带来了明显的
 
 # 参考
 
-什么是 web3：[英文](https://hbr.org/2022/05/what-is-web3)
+什么是 web3：[hbr.org-英文](https://hbr.org/2022/05/what-is-web3)
 
-什么是 Web3：[英文](https://www.coindesk.com/learn/what-is-web-3-and-why-is-everyone-talking-about-it/)
+什么是 Web3：[coindesk.com-英文](https://www.coindesk.com/learn/what-is-web-3-and-why-is-everyone-talking-about-it/)
 
-什么是 Web3？它将如何运作？：[英文](https://www.pcmag.com/how-to/what-is-web3-and-how-will-it-work)
+什么是 Web3？它将如何运作？：[pcmag.com-英文](https://www.pcmag.com/how-to/what-is-web3-and-how-will-it-work)
 
-Web 3.0 解释，以及 Web 1.0 和 2.0 的历史：[英文](https://www.investopedia.com/web-20-web-30-5208698)
+Web 3.0 解释，以及 Web 1.0 和 2.0 的历史：[investopedia.com-英文](https://www.investopedia.com/web-20-web-30-5208698)
 
+Web3：通往去中心化金融未来的门户：[noncustodial.finance](https://www.noncustodial.finance/news/web3-your-gateway-to-a-decentralized-financial-future?gad_source=1&gclid=CjwKCAiAxea5BhBeEiwAh4t5K7ctdvXN-M44XGJ2vfzrQcKgAHL9Zk7XxgyJAh9nCQbJREq7dbY9ShoCd6MQAvD_BwE)
+
+什么是web3：[mckinsey.com](https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-web3)
+
+Web 3.0 解释：综合指南：[simplilearn.com](https://www.simplilearn.com/tutorials/blockchain-tutorial/what-is-web-3-0)
+
+什么是 Web 3.0 （Web3）？定义、指南和历史：[techtarget.com](https://www.techtarget.com/whatis/definition/Web-30)
+
+什么是 Web 3.0？去中心化互联网解释：[coinmarketcap.com](https://coinmarketcap.com/academy/article/what-is-web-3-0)
+
+什么是 Web3？[coindesk.com](https://www.coindesk.com/learn/what-is-web-3-and-why-is-everyone-talking-about-it/)
+
+什么是 Web3？[mightynetworks.com](https://www.mightynetworks.com/encyclopedia/web3)
+
+什么是 Web3？以下是一些向朋友解释的方法：[consensys.io](https://consensys.io/blog/what-is-web3-here-are-some-ways-to-explain-it-to-a-friend)
+
+什么是 Web3？未来去中心化互联网的初学者指南：[cointelegraph.com](https://cointelegraph.com/learn/articles/what-is-web-3-0-a-beginners-guide-to-the-decentralized-internet-of-the-future)
