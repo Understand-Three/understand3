@@ -102,7 +102,10 @@ DeFi的诞生和创新的速度无疑将为支付工作引入新的思维方式�
 
 How to DiFi： [入门版-中文](https://nigdaemon.gitbook.io/how-to-defi-beginnerv2/) [进阶版-中文](https://nigdaemon.gitbook.io/how-to-defi-advanced-zhogn-wen-b) 
 
+什么是 DeFi：[coindesk.com](https://www.coindesk.com/learn/what-is-defi/)
 # 推荐阅读
+
+
     
 全球金融体系的7大缺陷(Jeff Desjardins)：[visualcapitalist.com-英文](https://www.visualcapitalist.com/7-major-flaws-global-financial-system)
     
@@ -140,3 +143,6 @@ DeFi 地图：[putlierventures.io-英文 PDF](https://outlierventures.io/wp-cont
 汤姆-施密特谈 DeFi（软件工程日报）[softwareengineeringdaily.com-英文](https://softwareengineeringdaily.com/2020/02/25/decentralized-finance-with-tom-schmidt/)
 
 前 5 名去中心化金融 （DeFi） 用例：[beincrypto.com](https://beincrypto.com/learn/decentralized-finance-and-use-cases/)
+
+加密套利交易：如何获得低风险收益 https://www.coindesk.com/learn/crypto-arbitrage-trading-how-to-make-low-risk-gains/
+
