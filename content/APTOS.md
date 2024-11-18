@@ -1,6 +1,7 @@
 ---
 title: Aptos 全方位解析
 link: https://www.jinse.cn/blockchain/3671103.html
+draft: true
 ---
 
 # Aptos全方位解析：技术、代币经济学、网络活动、生态系统

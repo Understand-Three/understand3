@@ -2,7 +2,7 @@
 title: 自动做市商是什么？
 aliases:
   - 自动做市商是什么？
-draft: true
+draft: false
 ---
 >[!NOTE]
 >想象一下，你生活在一个岛上，你生活的那个区域只能靠打渔为生。
