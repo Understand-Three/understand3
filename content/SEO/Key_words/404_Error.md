@@ -4,6 +4,7 @@ aliases:
   - 404 错误
 tags:
   - SEO
+draft: true
 ---
 # 404 Error 
 404 错误

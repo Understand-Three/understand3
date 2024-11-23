@@ -5,6 +5,7 @@ aliases:
 tags:
   - SEO
 original: https://ahrefs.com/zh/seo/glossary/304-not-modified
+draft: true
 ---
 # 304 Not Modified 304 未修改
 

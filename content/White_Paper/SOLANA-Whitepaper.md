@@ -9,6 +9,7 @@ tags:
   - whitepaper
 cssclasses:
   - "1"
+original: https://github.com/solana-labs/whitepaper/blob/master/solana-whitepaper-en.pdf
 ---
 ```yaml
 original:

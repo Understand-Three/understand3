@@ -1,5 +1,6 @@
 ---
 title: 10x 内容
+draft: true
 ---
 # 10x Content 
 10x 内容

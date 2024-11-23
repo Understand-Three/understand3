@@ -9,6 +9,7 @@ tags:
   - whitepaper
 cssclasses:
   - "1"
+original: https://bitcoin.org/bitcoin.pdf
 ---
 ```yaml
 title: "Bitcoin: A Peer-to-Peer Electronic Cash System"

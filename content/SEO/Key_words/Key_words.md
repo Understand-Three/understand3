@@ -2,6 +2,7 @@
 title: SEO 关键字
 tags: seo
 original: https://ahrefs.com/zh/seo/glossary
+draft: true
 ---
 
 ## 10倍内容 ([10x Content](https://ahrefs.com/zh/seo/glossary/10x-content))

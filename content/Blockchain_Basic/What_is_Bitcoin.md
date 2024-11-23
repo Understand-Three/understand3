@@ -3,6 +3,7 @@ title: 比特币是什么？
 aliases:
   - 比特币是什么？
 draft: false
+date: 2024-11-15
 ---
 ![[bitcoin-process.png]]
 

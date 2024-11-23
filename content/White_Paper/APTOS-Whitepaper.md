@@ -9,6 +9,7 @@ tags:
   - whitepaper
 cssclasses:
   - "1"
+original: https://aptosfoundation.org/whitepaper/aptos-whitepaper_en.pdf
 ---
 ```yaml
 original: 

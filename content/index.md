@@ -17,10 +17,11 @@ banner: static/space.jpg
 
 [[AIP/AIP|Aptos 优化提案]]
 
-[[Move 的历史]]
 
 [[AptosMoveBook]]
 
 [[MoveOnAptos实战教程]]
+
+[[Blockchain_Basic/index|区块链基础]]
 
 

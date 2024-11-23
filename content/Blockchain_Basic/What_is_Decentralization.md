@@ -3,6 +3,8 @@ title: 去中心化是什么？
 aliases:
   - 去中心化是什么？
 draft: true
+date: 2024-11-13
+updated:
 ---
 > [!NOTE]
 > 

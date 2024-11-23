@@ -3,6 +3,7 @@ title: 智能合约是什么？
 aliases:
   - 智能合约是什么？
 draft: false
+date: 2024-11-17
 ---
 >[!NOTE] 
 >自动售货机是现实中的“智能合约”

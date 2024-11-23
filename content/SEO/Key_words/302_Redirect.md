@@ -1,6 +1,7 @@
 ---
 title: 302 临时重定向
 original: https://ahrefs.com/zh/seo/glossary/302-redirect
+draft: true
 ---
 # 302 Redirect 
 302 临时重定向

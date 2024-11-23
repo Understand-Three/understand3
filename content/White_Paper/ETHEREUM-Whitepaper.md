@@ -9,6 +9,7 @@ tags:
   - whitepaper
 cssclasses:
   - "1"
+original: https://ethereum.org/en/whitepaper/
 ---
 
 ```yaml

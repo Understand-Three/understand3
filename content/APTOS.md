@@ -2,15 +2,11 @@
 title: Aptos 全方位解析
 link: https://www.jinse.cn/blockchain/3671103.html
 draft: true
+original: https://www.jinse.cn/blockchain/3671103.html
+date: 2023-12-29
 ---
-
-# Aptos全方位解析：技术、代币经济学、网络活动、生态系统
-
-## 金色财经
-
- 刚刚 ![](https://staticn.jinse.cn/w/img/868bf8c.svg)
-
-作者：Peter Horton，L1协议分析师；翻译：金色财经xiaozou
+作者：Peter Horton，L1 协议分析师；
+翻译：金色财经xiaozou
 
 ## 1、关键见解
 

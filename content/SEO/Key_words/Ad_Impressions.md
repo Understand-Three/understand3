@@ -5,6 +5,7 @@ aliases:
 tags:
   - SEO
 original: https://ahrefs.com/zh/seo/glossary/ad-impressions
+draft: true
 ---
 # Ad Impressions 广告展示次数
 

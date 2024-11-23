@@ -55,9 +55,9 @@ pnpm i jwt-decode
 
 目前只支持 Google。Aptos 将在以后支持其他的 OIDC 提供商（例如苹果、Kakaotalk、微软等）。
 
-| 身份提供者 | 认证 URL                                                                                                                                                                                     |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Google     | `https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=$%7BCLIENT_ID%7D&redirect_uri=$%7BREDIRECT_URI%7D&response_type=id_token&scope=openid%20email&nonce=$%7BNONCE%7D` |
+| 身份提供者  | 认证 URL                                                                                                                                                                                       |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Google | `https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=$%7BCLIENT_ID%7D&redirect_uri=$%7BREDIRECT_URI%7D&response_type=id_token&scope=openid%20email&nonce=$%7BNONCE%7D` |
 
 隐式流程（无授权码交换）是首选的身份验证方法。下面的集成步骤假定使用隐式流程。
 
@@ -68,9 +68,8 @@ pnpm i jwt-decode
 注册 Google 云账户（如果您还没有）
 
 1. 创建一个新项目或选择现有项目
-   - 上方的`下拉选择器`中`创建项目` -> 在`左侧菜单`中选择 `API 和服务` -> `凭据` -> 上方`创建凭据` -> `OAuth 客户端 ID` -> `配置同意屏幕` -> `外部` -> `创建` -> `发布应用` -> `提交验证`
+   - 上方的`下拉选择器`中`创建项目` -> 在`左侧菜单`中选择 `API 和服务` -> `凭据` -> 上方`创建凭据` -> `OAuth 客户端 ID` -> `配置同意屏幕(权限请求页面)` -> `外部` -> `创建` -> `发布应用` -> `提交验证`
 
-<iframe width="800" height="450" src="https://learn.aptoslabs.com/videos/google_api_console.mov" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 2. 转到[凭据](https://console.developers.google.com/apis/credentials)页面。
 
@@ -78,8 +77,6 @@ pnpm i jwt-decode
 
 3. 如果之前没有设置过 OAuth 同意屏幕，您可能需要进行设置。
    - 这是您将为应用程序配置一些应用信息以及应用程序的作用域和权限的地方。
-
-<iframe width="800" height="450" src="https://learn.aptoslabs.com/videos/credentials_to_consent_screen.mov" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 4. 选择或创建一个新的“OAuth 2.0 Client ID”。
 
@@ -95,7 +92,6 @@ pnpm i jwt-decode
 7. 获取您的应用程序的 `client_id`。
    - 将其保存在您的 `.env` 变量或常量文件中。
 
-<iframe width="800" height="450" src="https://learn.aptoslabs.com/videos/create_client_id.mov" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!TIP]
 >

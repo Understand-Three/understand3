@@ -3,6 +3,7 @@ title: Web3 是什么？
 aliases:
   - Web3 是什么？
 draft: false
+date: 2024-11-15
 ---
 >[!NOTE]
 >- Web 1.0 就是关于获取和读取信息。 

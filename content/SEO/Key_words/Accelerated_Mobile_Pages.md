@@ -5,6 +5,7 @@ aliases:
 tags:
   - SEO
 original: https://ahrefs.com/zh/seo/glossary/accelerated-mobile-pages
+draft: true
 ---
 # Accelerated Mobile Pages (AMP)  
 加速移动页面 （AMP）

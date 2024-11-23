@@ -5,6 +5,7 @@ aliases:
 tags:
   - SEO
 original: https://ahrefs.com/zh/seo/glossary/410-gone
+draft: true
 ---
 # 410 Gone 
 410 消失

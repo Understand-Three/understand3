@@ -1,6 +1,7 @@
 ---
 title: 301 重定向
 original: https://ahrefs.com/zh/seo/glossary/301-redirect
+draft: true
 ---
 # 301 Redirect 301 重定向
 # 301 Redirect 301 重定向

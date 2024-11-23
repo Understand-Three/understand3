@@ -5,6 +5,7 @@ aliases:
   - 助记词是什么？
   - BIP-39
 draft: true
+date: 2024-11-15
 ---
 BIP39（Bitcoin Improvement Proposal 39）是比特币改进提案之一，提出了一种基于助记词来生成钱包种子（seed）的标准方法。
 
