@@ -62,7 +62,7 @@ Google 会检查页面的内容，以确定它是否是相关的搜索结果。�
 
 ## **如何进行页面**优化
 
-如果你曾经听说过页面优化是指在页面上重复关键词，那就大错特错了。过度使用这种方法实际上会影响你的排名[[2]](https://ahrefs.com/blog/zh/on-page-seo/#references)。因此，让我们来介绍一些合理的优化方法，它们会对排名产生积极的影响。
+如果你曾经听说过页面优化是指在页面上重复关键词，那就大错特错了。过度使用这种方法实际上会影响你的排名[[Archive/Game/2]](https://ahrefs.com/blog/zh/on-page-seo/#references)。因此，让我们来介绍一些合理的优化方法，它们会对排名产生积极的影响。
 
 我们还将所有页面上的 SEO 元素总结在一个清单中（Google Sheets），来看看如何使用它：
 
@@ -156,7 +156,7 @@ Google 会检查页面的内容，以确定它是否是相关的搜索结果。�
 
 ### 使用 H1-H6 标签创建视觉层次结构
 
-标题标签（H1、H2 等）不仅有助于 Google 理解你网页上的内容[[3]](https://ahrefs.com/blog/zh/on-page-seo/#references) ，还可以帮助读者理解内容并提高可读性。
+标题标签（H1、H2 等）不仅有助于 Google 理解你网页上的内容[[Archive/Game/3]](https://ahrefs.com/blog/zh/on-page-seo/#references) ，还可以帮助读者理解内容并提高可读性。
 
 ![副标题通过创建视觉层次结构来提高可读性](https://ahrefs.com/blog/zh/wp-content/uploads/2023/11/On-Page-SEO.png)
 
@@ -178,7 +178,7 @@ Google 会检查页面的内容，以确定它是否是相关的搜索结果。�
 
 ### 写一个引人注目的标题标签
 
-标题标签通常是决定点击哪个结果的主要信息，因此你需要让它们具有吸引力[[4]](https://ahrefs.com/blog/zh/on-page-seo/#references) 。以下是一些建议：
+标题标签通常是决定点击哪个结果的主要信息，因此你需要让它们具有吸引力[[Archive/Game/4]](https://ahrefs.com/blog/zh/on-page-seo/#references) 。以下是一些建议：
 
 - **保持简短** — 不超过 70 个字符最好，以避免截断。
 - **匹配搜索意图** — 告诉搜索者你拥有他们想要的。

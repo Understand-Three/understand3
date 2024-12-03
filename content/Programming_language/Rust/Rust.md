@@ -12,3 +12,7 @@ sticker: emoji//1f438
 banner: static/rust.jpg
 draft: "true"
 ---
+# 文档
+
+- [官网](https://www.rust-lang.org/zh-CN/learn/get-started)
+- [test]x()

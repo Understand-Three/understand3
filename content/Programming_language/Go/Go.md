@@ -12,6 +12,12 @@ _templateName: ""
 sticker: emoji//1f3c2
 banner: static/golang.jpg
 ---
+# 文档
+
+- [Golang 中心学习文档](https://golang.halfiisland.com/guide.html)
+- [Go 官网](https://go.dev)
+
+
 # 概述
 Go 是一个开源的编程语言，它能让构造简单、可靠且高效的软件变得容易。
 
