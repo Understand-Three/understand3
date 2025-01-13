@@ -12,3 +12,8 @@ sticker: emoji//1f5ef-fe0f
 banner: static/TypeScript.jpg
 draft: "true"
 ---
+[TS 中文网](https://www.tslang.cn/docs/handbook/basic-types.html)
+
+https://github.com/946629031/typeScript
+
+https://jkchao.github.io/typescript-book-chinese/typings/overview.html

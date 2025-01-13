@@ -2,7 +2,12 @@
 title: 第一个程序 hello world
 draft: true
 ---
+```bash
+go mod init
+```
 第一个 go 程序
+
+
 ```go
 package main
 import "fmt"

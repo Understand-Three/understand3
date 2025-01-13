@@ -6,6 +6,7 @@ aliases:
 date: 2024-11-10
 ---
 # web3-awesome
+
 web3百科全书👏🏻 打造 web3 全球第一中文资源
 
 ## 学习资料
@@ -70,6 +71,7 @@ web3百科全书👏🏻 打造 web3 全球第一中文资源
 ### 出版书籍📚
 
 #### 商业类
+
 《区块链技术及应用 第二版》
 
 《区块链革命》
@@ -110,9 +112,9 @@ web3百科全书👏🏻 打造 web3 全球第一中文资源
 
 《区块链底层设计 Java实战》
 
-《Spring Boot区块链应用开发入门》
+《Spring Boot 区块链应用开发入门》
 
-《Go语言区块链应用开发 从入门到精通》
+《Go 语言区块链应用开发 从入门到精通》
 
 《区块链 通往资产数字化之路》
 
@@ -191,11 +193,13 @@ web3百科全书👏🏻 打造 web3 全球第一中文资源
 ## 视频课程
 
 ### 科普
+
 [【科普】快来学习什么是区块链【合集】](https://www.bilibili.com/video/BV1uW411578L?spm_id_from=333.337.search-card.all.click)
 
 [纪录片-区块链之新](https://www.bilibili.com/bangumi/play/ss28925?spm_id_from=333.337.0.0)
 
 ### 入门课程
+
 [学堂在线-区块链和加密数字货币](https://www.xuetangx.com/course/thu12021002731/10333144?channel=i.area.learn_title)
 
 [油管-如何在2022年成为一个高收入的区块链开发者-英文](https://www.youtube.com/watch?v=uGPC9wNTBbw&t=12s)

@@ -17,5 +17,3 @@ https://lisp-lang.org/books/
 https://gigamonkeys.com/book/lather-rinse-repeat-a-tour-of-the-repl
 
 https://lisp-lang.org/learn/
-
-

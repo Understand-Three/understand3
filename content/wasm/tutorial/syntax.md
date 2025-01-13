@@ -1,6 +1,8 @@
 ---
 title: 基本语法
 draft: true
+tags:
+  - wasm
 ---
 
 # 基本语法

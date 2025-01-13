@@ -11,7 +11,32 @@ cssclasses:
   - "1"
 ---
 # Mac
+
+1. **安装 MySQL**： 使用 Homebrew 安装 MySQL：    
+```bash
+brew install mysql
+```
+    
+2. **启动 MySQL**： 安装完成后，启动 MySQL 服务：
+```bash
+brew services start mysql
+```
+    
+3. **安全配置**： 运行安全安装脚本来设置 root 密码等：
+```bash
+mysql_secure_installation
+```
+    
+4. **访问 MySQL**： 你可以通过以下命令访问 MySQL 命令行：
+
+```text
+mysql -u root -p
+```
+
+---
+
 参考：[macOS下MySQL 8.0 安装与配置教程](https://www.cnblogs.com/kentalk/p/macos-mysql8-install-config-tutorial.html)
+
 ```bash 
 # 安装 mysql
 brew install mysql
@@ -121,3 +146,137 @@ mysqldump -u root -p database_name > database_name_backup.sql
 - **系统资源**：ARM 架构的设备通常资源有限，可能会影响 MySQL 或 MariaDB 的性能。在选择和配置数据库时要特别注意系统资源的使用情况。
 
 通过上述步骤，您应该能够在 Armbian 上成功安装并配置 MySQL 或 MariaDB。如果遇到特定于 Armbian 的问题或者需要进一步的帮助，请随时提供更多详细信息。
+
+
+```sql
+SELECT
+    c.id as comment_id,
+    c.content,
+    c.created_at as publish_time,
+    u.username as author,
+    u.wallet_address,
+    JSON_ARRAYAGG(
+        JSON_OBJECT(
+            'url', hi.image_url,
+            'is_cover', hi.is_cover
+        )
+    ) as images,
+    (
+        SELECT COUNT(DISTINCT id)
+        FROM likes
+        WHERE target_id = c.id 
+        AND target_type = 1 
+        AND deleted_at IS NULL
+    ) as like_count,
+    (
+        SELECT COUNT(DISTINCT id)
+        FROM comments
+        WHERE parent_id = c.id 
+        AND deleted_at IS NULL
+    ) as reply_count
+FROM comments c
+LEFT JOIN users u ON c.wallet_address = u.wallet_address
+LEFT JOIN house_images hi ON hi.house_id = c.target_id 
+    AND hi.deleted_at IS NULL 
+    AND hi.status = 1
+WHERE  c.parent_id IS NULL 
+    AND c.deleted_at IS NULL 
+    AND c.status = 1 
+    AND c.target_id = 1
+GROUP BY c.id, c.content, c.created_at, u.username, u.wallet_address
+ORDER BY c.created_at DESC;
+```
+
+查看表结构
+
+```sql
+DESCRIBE table_name;
+SHOW COLUMNS FROM users;
+```
+
+
+查询指定评论 id 对应的图片
+```sql
+SELECT id, image_url, is_cover FROM comment_images WHERE comment_id = 1;
+```
+
+
+
+```sql
+SELECT 
+    c.id AS comment_id,
+    c.wallet_address,
+    c.content,
+    c.created_at,
+    -- 获取评论图片
+    JSON_ARRAYAGG(
+        JSON_OBJECT(
+            'image_url', ci.image_url,
+            'display_order', ci.display_order
+        )
+    ) AS comment_images,
+    -- 获取点赞数
+    COUNT(DISTINCT l.id) AS like_count,
+    -- 获取子评论数
+    COUNT(DISTINCT rc.id) AS reply_count
+FROM comments c
+-- 左连接评论图片
+LEFT JOIN comment_images ci ON ci.comment_id = c.id AND ci.status = 1
+-- 左连接点赞数据
+LEFT JOIN likes l ON l.target_type = 1 
+    AND l.target_id = c.id 
+    AND l.deleted_at IS NULL
+-- 左连接回复评论
+LEFT JOIN comments rc ON rc.parent_id = c.id 
+    AND rc.deleted_at IS NULL
+WHERE 
+    c.target_type = 1  -- 1表示房源评论
+    AND c.parent_id IS NULL  -- 只查询父级评论
+    AND c.status = 1  -- 评论状态正常
+    AND c.deleted_at IS NULL
+    AND c.target_id = 2  -- 这里传入具体的房源id
+GROUP BY 
+    c.id,
+    c.wallet_address,
+    c.content,
+    c.created_at
+ORDER BY 
+    c.created_at DESC;
+```
+
+
+
+```sql
+SELECT 
+    c.id AS comment_id,
+    c.target_id,
+    JSON_ARRAYAGG(
+        JSON_OBJECT(
+            'image_url', ci.image_url,
+            'is_cover', ci.is_cover,
+            'display_order', ci.display_order
+        )
+    ) AS comment_images
+FROM comments c
+LEFT JOIN comment_images ci ON ci.comment_id = c.id 
+    AND ci.status = 1 
+    AND ci.deleted_at IS NULL
+WHERE 
+    c.target_type = 1  -- 1表示房源评论
+    AND c.parent_id IS NULL  -- 只查询父级评论
+    AND c.status = 1  -- 评论状态正常
+    AND c.deleted_at IS NULL
+    AND c.target_id = 3  -- 这里传入具体的房源id
+  --  AND c.id = 7377
+GROUP BY 
+    c.id,
+    c.content
+ORDER BY 
+    c.id DESC;
+```
+
+
+
+```sql
+SELECT ci.comment_id,ci.image_url FROM comment_images as ci ORDER BY comment_id DESC;
+```

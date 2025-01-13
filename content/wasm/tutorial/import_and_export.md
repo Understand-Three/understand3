@@ -1,6 +1,8 @@
 ---
 title: 导入与导出
 draft: true
+aliases:
+  - wasm
 ---
 
 # 导入与导出

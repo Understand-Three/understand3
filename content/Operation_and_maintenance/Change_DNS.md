@@ -198,3 +198,6 @@ armando.ns.cloudflare.com
 ![[Pasted image 20241107003108.png]]
 
 ![[Pasted image 20241107003149.png]]
+
+
+SSL/TLS 加密模式：完全

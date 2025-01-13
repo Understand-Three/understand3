@@ -96,7 +96,7 @@ Shell printf命令的一些常用标识符如下表所示
 
 使用举例：
 
-```
+```bash
 $printf "%-20s%-15s%10.2f\n" "Shan" "zhang" 35       
 输出:Shan                zhang               35.00
 %-20s表示一个左对齐、宽度为20个字符字符串格式，不足20个字符，右侧补充相应数量的空格符。
@@ -121,7 +121,7 @@ $printf "%x %#x\n" 15 15
 
 下面给大家总结了一些比较综合的例子，希望能够帮助大家学习Shell printf命令。
 
-```
+```bash
 字符串向左向右对齐:
 $printf "|%-10s| |%10s|\n" hello world
 输出|hello     | |     world|
@@ -147,9 +147,13 @@ $printf "%05d\n" 15
 
 更进一步说，如果参数的第一个字符为单引号或双引号，则对应的数值是字符串的第二个字符的ASCII值，比如：
 
-命令:printf “%s is %d \n” a “‘a”
+命令:
+```bash
+printf “%s is %d \n” a “‘a”
+```
 
-输出:a is 97 
+
+输出: `a is 97`
 
 当参数多于格式指示符时，格式指示符会根据需要再利用。
 
@@ -174,6 +178,7 @@ $printf "%05d\n" 15
 转载请保留链接及出处！
 
  
+---
 
 作用：按照我们指定的格式输出文本
 
@@ -198,10 +203,10 @@ printf "%s\n%s\n%s\n%4.2f\n%4.2f\n%4.2f\n" I love you 11 12.2 13.35
 如果 FORMAT 数量少于 item 数量，则 FORMAT 的个数控制一次传多少个 item 处理。
 比如：
 ```bash
-#printf "%7s %7s\n" I love you 11 12.2 13.35   
+printf "%7s %7s\n" I love you 11 12.2 13.35   
 ```
 2个FROMAT 6个item,一次传2个处理
-```text
+```bash
 I    love
 you      11
 12.2   13.35
@@ -225,6 +230,7 @@ printf "%g\n" -1 10 100.15 123.14
 
 
 `%e`, `%E`:显示科学计数法数值
+
 ```bash
 printf "%e\n" A -1 10 100.15 123.14
 ```
@@ -272,8 +278,11 @@ printf "%f\n" A -1 10 100.15 123.14
 %s：显示字符串
 
 `%u`：无符号整数
-    #printf "%u\n" A -1 10 100.15 123.14
-    -bash: printf: A: invalid number
+printf "%u\n" A -1 10 100.15 123.14
+    -bash: 
+```bash
+```
+    printf: A: invalid number
     0
     18446744073709551615
     10
@@ -282,7 +291,7 @@ printf "%f\n" A -1 10 100.15 123.14
     -bash: printf: 123.14: invalid number
     0
 
-%o 不带正负号的八进制值
+`%o` 不带正负号的八进制值
 %u 不带正负号的十进制值
 %x 不带正负号的十六进制值，使用a至f表示10至15
 %X 不带正负号的十六进制值，使用A至F表示10至15
@@ -354,7 +363,7 @@ you
 
 来一些实例：
 
-为传入的参数增加一对 [] 参数在[ ] 内
+为传入的参数增加一对 `[]` 参数在 `[ ]` 内
 
 ```ini
 #cat mod|xargs printf "[ %s ]\n"

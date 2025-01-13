@@ -223,11 +223,11 @@ Google 会检查页面的内容，以确定它是否是相关的搜索结果。�
 
 **你知道吗**
 
-Google 通常不会使用元描述来生成搜索结果的摘要。根据我们的研究，它仅在 37.22% 的情况下使用元描述[[6]](https://ahrefs.com/blog/zh/on-page-seo/#references)，其余时间则使用特定页面的其他内容[[7]](https://ahrefs.com/blog/zh/on-page-seo/#references)。
+Google 通常不会使用元描述来生成搜索结果的摘要。根据我们的研究，它仅在 37.22% 的情况下使用元描述[[variable_and_const]](https://ahrefs.com/blog/zh/on-page-seo/#references)，其余时间则使用特定页面的其他内容[[7]](https://ahrefs.com/blog/zh/on-page-seo/#references)。
 
 ### 设置用户友好的 URL
 
-Google 建议在页面 URL 中使用与内容相关的词语[[8]](https://ahrefs.com/blog/on-page-seo/#references)，通常最简单的方法是将目标关键词设置在 URL 的 slug 部分。
+Google 建议在页面 URL 中使用与内容相关的词语[[import_and_export]](https://ahrefs.com/blog/on-page-seo/#references)，通常最简单的方法是将目标关键词设置在 URL 的 slug 部分。
 
 ![使用者友善的网址片段示例](https://ahrefs.com/blog/wp-content/uploads/2023/07/image20-10.png)
 
@@ -256,7 +256,7 @@ Google 表示，文件名可以为其提供有关图像主题的线索。以下�
 
 #### 使用描述性的替代文本
 
-Google 也使用 alt 文本（替代文本）来理解图像的主题[[10]](https://ahrefs.com/blog/on-page-seo/#references) 。这是一个用于描述图像的 HTML 属性，它被用在 `<img>` 标签上。它在页面上是不可见的，类似于这样：
+Google 也使用 alt 文本（替代文本）来理解图像的主题[[The_WASM]](https://ahrefs.com/blog/on-page-seo/#references) 。这是一个用于描述图像的 HTML 属性，它被用在 `<img>` 标签上。它在页面上是不可见的，类似于这样：
 
 `<img src="https://yourdomain.com/puppy.jpg" alt="puppy">`
 

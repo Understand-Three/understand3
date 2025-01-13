@@ -178,7 +178,7 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 获取历史事件的接口
 
 
-USDT 合约的坑：[[大坑！以太坊 USDT 没有完全遵循 ERC20 标准]]、[[Unable to use usdt token inside contract]]
+USDT 合约的坑：[[Ethereum_USDT_does_not_fully_comply_with_the_ERC20_standard]]、[[Unable to use usdt token inside contract]]
 
 灾难复现：[灾难复现](https://github.com/liangpeili/DApp-and-Smart-Contract-Practice/tree/master/course02)
 
